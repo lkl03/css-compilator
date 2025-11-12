@@ -1,65 +1,134 @@
-import Image from "next/image";
+// app/page.tsx
+'use client'
 
-export default function Home() {
+import { useEffect, useRef, useState } from 'react'
+import { useTheme } from 'next-themes'
+import { SearchBar } from '../components/SearchBar'
+import TemplateSelect from '../components/TemplateSelect'
+import { ResultCard } from '../components/ResultCard'
+import Spinner from '../components/Spinner'
+import type { Injection } from '../lib/types'
+import { useDebouncedValue } from '../lib/useDebouncedValue'
+
+export default function HomePage() {
+  const { theme, setTheme } = useTheme()
+
+  const [query, setQuery] = useState('')
+  const [template, setTemplate] = useState<string>('GLOBAL')
+  const [results, setResults] = useState<Injection[]>([])
+  const [total, setTotal] = useState(0)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string>('')
+
+  const debounced = useDebouncedValue(query, 180)
+  const controllerRef = useRef<AbortController | null>(null)
+
+  useEffect(() => {
+    const run = async () => {
+      setLoading(true)
+      setError('')
+      controllerRef.current?.abort()
+      controllerRef.current = new AbortController()
+
+      try {
+        const params = new URLSearchParams()
+        if (debounced) params.set('q', debounced)
+        if (template) params.set('template', template)
+        params.set('elementOnly', '1')
+        params.set('limit', '27')
+
+        const res = await fetch(`/api/injections?${params.toString()}`, {
+          signal: controllerRef.current.signal,
+          cache: 'no-store',
+        })
+        if (!res.ok) throw new Error('HTTP error')
+
+        const data = (await res.json()) as { items: Injection[]; total: number }
+        setResults(Array.isArray(data.items) ? data.items : [])
+        setTotal(typeof data.total === 'number' ? data.total : 0)
+      } catch (err: any) {
+        if (err?.name !== 'AbortError') setError('Could not search. Please try again.')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    run()
+  }, [debounced, template])
+
+  const hasQuery = query.trim().length > 0
+  const templateLabel = template === 'GLOBAL' ? 'Global CSS' : template
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <main className="space-y-6">
+        <header>
+          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-center">LP CSS Hub</h1>
+        </header>
+
+        <section className="glass p-4 sm:p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="sm:col-span-2">
+              <SearchBar
+                placeholder="Search component, element, tag…"
+                value={query}
+                onChange={setQuery}
+              />
+            </div>
+            <TemplateSelect value={template} onChange={setTemplate} />
+          </div>
+          <p className="mt-2 text-sm muted-text text-center sm:text-left">
+            Tip: type the component or element name (e.g., “card”, “header”, “CTA”). You can filter by template.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        </section>
+
+        <section className="text-center text-sm text-slate-600 dark:text-slate-300">
+          {loading ? (
+            <div className="flex justify-center"><Spinner label="Searching…" /></div>
+          ) : (
+            `Showing ${results.length} of ${total} result${total === 1 ? '' : 's'}${hasQuery ? ` for “${query}”` : ''} in ${templateLabel}`
+          )}
+        </section>
+
+        <section className="panel p-3">
+          {!loading && results.length === 0 && hasQuery && (
+            <div className="p-3 text-sm text-center">No results for “{query}”.</div>
+          )}
+
+          <div className="h-[72vh] overflow-y-auto pr-1 thin-scrollbar">
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 auto-rows-max">
+              {results.map((item) => (<ResultCard key={item.id} item={item} />))}
+            </div>
+          </div>
+        </section>
+
+        <footer className="pt-6 pb-10 text-center text-sm muted-text">
+          Inquiries, suggestions? Reach me on{' '}
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="/slack"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
+            className="underline underline-offset-4 text-ink hover:opacity-90"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Slack
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          ! -<span className='italic'> Luca</span> 
+        </footer>
       </main>
-    </div>
-  );
+
+      <div className="fixed inset-0 pointer-events-none z-50">
+        <button
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          className="icon-btn pointer-events-auto fixed bottom-6 right-6 h-14 w-14 text-2xl flex items-center justify-center"
+          aria-label={theme === 'dark' ? 'Switch to light' : 'Switch to dark'}
+          title={theme === 'dark' ? 'Switch to light' : 'Switch to dark'}
+        >
+          {theme === 'dark' ? '🌙' : '🌞'}
+        </button>
+      </div>
+    </>
+  )
 }
+
+
+
