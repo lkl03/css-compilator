@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes'
 
 export const metadata: Metadata = {
   title: 'LP CSS Hub',
-  description: 'Buscador de inyecciones CSS por componente y template',
+  description: '',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
