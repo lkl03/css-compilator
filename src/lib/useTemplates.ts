@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const ORDER = ["GLOBAL", "Masterpiece", "Producer"];
+const ORDER = ["GLOBAL", "Masterpiece", "Producer", "Influencer", "Visionary"];
 
 export function useTemplates() {
   const [templates, setTemplates] = useState<string[]>([]);

@@ -20,11 +20,13 @@ async function readIfExists(relPaths: string[]): Promise<Injection[]> {
 
 export async function readAll(template?: string): Promise<Injection[]> {
   // 👇 importante: contemplar ambos nombres
-  const globalDB   = await readIfExists(["global.json", "globals.json"]);
-  const masterDB   = await readIfExists(["masterpiece.json"]);
-  const producerDB = await readIfExists(["producer.json"]);
+  const globalDB     = await readIfExists(["global.json", "globals.json"]);
+  const masterDB     = await readIfExists(["masterpiece.json"]);
+  const producerDB   = await readIfExists(["producer.json"]);
+  const influencerDB = await readIfExists(["influencer.json"]);
+  const visionaryDB  = await readIfExists(["visionary.json"]);
 
-  let all = [...globalDB, ...masterDB, ...producerDB];
+  let all = [...globalDB, ...masterDB, ...producerDB, ...influencerDB, ...visionaryDB];
 
   if (template) {
     const t = template.trim().toLowerCase();
@@ -34,7 +36,7 @@ export async function readAll(template?: string): Promise<Injection[]> {
 }
 
 export async function distinctTemplates(): Promise<string[]> {
-  const order = ["GLOBAL", "Masterpiece", "Producer"];
+  const order = ["GLOBAL", "Masterpiece", "Producer", "Influencer", "Visionary"];
   const seen = new Set<string>();
   (await readAll()).forEach(x => seen.add((x.template ?? "").trim()));
   return order.filter(t => seen.has(t));

@@ -1,0 +1,1817 @@
+[
+  {
+    "id": "global-styles-visionary-27d58ee7",
+    "element": "Global Styles",
+    "template": "Visionary",
+    "selector": null,
+    "css": ":root {\n    --global-h4-font-size: 32px;\n    --global-h5-font-size: 24px;\n    --global-h6-font-size: 20px;\n}\n\n/*Start - Change all titles to caps by WB Nicolas V*/\n/*START - Makes Global Font titlecase*/\nh1,\nh2,\nh3,\nh4,\nh5,\n.lp-h1,\n.lp-h2,\n.lp-h3,\n.lp-h4,\n.lp-h5 {\n    text-transform: uppercase ;\n}\n/*END*/\n\n\n/*font-variation-settings specific to the visionary. */\n/*if you experiment something funky with a different font, try to remove below CSS*/\n.lp-h1,\n.lp-h2,\n.lp-h3{\n    font-variation-settings: 'opsz' 44, 'GRAD' 0, 'slnt' 0, 'XTRA' 510, 'XOPQ' 96, 'YOPQ' 40, 'YTLC' 540, 'YTUC' 712, 'YTAS' 750, 'YTDE' -220, 'YTFI' 738;\n}\n\n.watermark {\n    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 511, 'XOPQ' 96, 'YOPQ' 50, 'YTLC' 537, 'YTUC' 712, 'YTAS' 750, 'YTDE' -221, 'YTFI' 738, 'opsz' 44;\n}\n\n/*end of font-variation-settings*/",
+    "action": "Make font global, make titles uppercase",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "global-styles-visionary-7d648f46",
+    "element": "Global Styles",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - home val search bar*/\n.pac-item:hover {\n    background-color: #042D49;\n    span{\n        color: #fff !important;\n    }\n}\n/*END - home val search bar*/",
+    "action": "Fix Dropdown for 1° step in Home Valuation Tool",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "global-styles-visionary-10d7810d",
+    "element": "Global Styles",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* START - Fix custom intro arrow button theme */\n.custom-intro__scroll-btn,\n.agent-intro__scroll-btn,\n.neighborhood-intro__scroll-btn,\n.blog-post-intro__scroll-btn{\n    border-color: #fff;\n    background: transparent;\n}\n\n.custom-intro__scroll-btn:after,\n.agent-intro__scroll-btn:after,\n.neighborhood-intro__scroll-btn:after,\n.blog-post-intro__scroll-btn:after {\n    background: #fff;\n}\n\n.custom-intro__scroll-btn:hover,\n.agent-intro__scroll-btn:hover,\n.neighborhood-intro__scroll-btn:hover,\n.blog-post-intro__scroll-btn:hover {\n    border-color: #fff;\n    background: #fff;\n}\n\n.custom-intro__scroll-btn:hover:after,\n.agent-intro__scroll-btn:hover:after,\n.neighborhood-intro__scroll-btn:hover:after,\n.blog-post-intro__scroll-btn:hover:after {\n    background: #000;\n}\n/* END */\n\n/*START - Custom Intro Box global theming*/\n.custom-intro__content-box,\n.agent-intro__content-box,\n.neighborhood-intro__content-box,\n.blog-post-intro__content-box {\n    background-color:rgba(0, 0, 0, 0.9);\n}\n\n.custom-intro__pre-title,\n.agent-intro__pre-title,\n.neighborhood-intro__pre-title,\n.blog-post-intro__pre-title,\n.custom-intro__title,\n.agent-intro__title,\n.neighborhood-intro__title,\n.blog-post-intro__title,\n.custom-intro__title--with-pretitle:before,\n.agent-intro__title--with-pretitle:before,\n.neighborhood-intro__title--with-pretitle:before,\n.blog-post-intro__title--with-pretitle:before{\n    color: #fff;\n}\n/*END - Custom Intro Box global theming*/",
+    "action": "Custom Intro Globally",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "global-styles-visionary-a574d93d",
+    "element": "Global Styles",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Custom Intro Center Button*/\n.custom-intro{\n    &__scroll-btn {\n        border: 1px solid #fff;\n        background-color: #fff;\n        &:after{\n            background: #000;\n        }\n        &:hover {\n            border: 1px solid #fff;\n            background-color: transparent;\n            &:after{\n                background: #fff;\n            }\n        }\n    }\n    \n    &__title--with-pretitle {\n            &:before{\n                    border-color: #EAE710;\n            }\n    }\n}\n/*End - Custom Intro Button*/",
+    "action": "Other Custom Intro",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "global-styles-visionary-b5e7c6af",
+    "element": "Global Styles",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* START - Fix pagination slider arrows on hover globally */\n.lp-arrow {\n    border-color: #000;\n    background: TRANSPARENT;\n\n    &:after {\n        background: #000;\n    }\n}\n\n.lp-arrow:hover:not(:disabled) {\n    border-color: #000;\n    background:  #000;\n\n    &:after {\n        background: #FFF;\n    }\n}\n\n/* END */",
+    "action": "Arrows Globally",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-174bb949",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix arrow and dropdown in modal element - WB */\n.modal .modal-content{\n    .custom-select{\n        .custom-select-toggle.is-placeholder {\n            color: #000000;\n        }\n        .custom-select-toggle:after{\n            background-color: #56769F;\n        }\n        .custom-select-item:hover{\n            background-color: #56769F;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Fix arrow and dropdown in modal element",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-5650c985",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media only screen and (max-width: 767px){\n    .lp-close {\n        right: 2vw;\n        top: 2vh;\n    }\n}\n.close .lp-close-icon, .close img {\n    filter: invert(0) !important;\n}\n\n.custom-form {\n    color: #fff;\n    background-color: #495057!important;\n    &__header{\n        max-width: 860px;\n    }\n    &__download-form {\n        justify-content: center;\n    }\n    @media only screen and (max-width: 768px){\n        &__heading{\n            font-size: 27px;\n        }\n    }\n}\n\n.lp-input {\n    background: #fff;\n    color: #000;\n    &:hover{\n        border-color: transparent;\n        background: #fff;\n        color: #000;\n    }\n    &:focus{\n        border-color: transparent;\n        background: #000;\n        color: #fff;\n    }\n    &:not(:placeholder-shown):invalid{\n        border-color: transparent;\n        background: #000;\n        color: #fff;\n    }\n}\n\n.custom-select{\n    .custom-select-content {\n        background-color: #fff!important;\n        color: #000 !important;\n    }\n    .custom-select-item:hover {\n        background-color: #000!important;\n        color: #fff !important;\n    }\n    .custom-select-item.is-selected {\n        background-color: #000!important;\n        color: #fff !important;\n    }\n}\n\n.custom-form__heading {\n    text-transform: uppercase;\n    font-size: var(--global-h2-font-size);\n}\n\n.custom-form__footer {\n    justify-content: center;\n}\n\n@media only screen and (max-width: 767px){\n    .modals>.modal .close, body>.modal .close {\n        right: 2vw !important;\n        top: 2vh !important;\n    }\n}",
+    "action": "Code for Modal",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-08c153a2",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* START - Relayout custom form */\n.close {\n    top: 32px;\n    right: 32px;\n\n    @media (max-width: 768px) {\n        top: 16px;\n        right: 16px;\n    }\n}\n\n.custom-form__header {\n    max-width: 100%;\n}\n.custom-form {\n    color: #fff;\n}\n\n.lp-input {\n    background: #fff;\n    color: #000;\n    &:hover{\n        border-color: transparent;\n        background: #fff;\n        color: #000;\n    }\n    &:focus{\n        border-color: transparent;\n        background: #fff;\n        color: #000;\n    }\n    &:not(:placeholder-shown):invalid{\n        border-color: transparent;\n        background: #fff;\n        color: #000;\n    }\n}\n\n.custom-select{\n    .custom-select-content {\n        background-color: #fff!important;\n        color: #000 !important;\n    }\n    .custom-select-item:hover {\n        background-color: #88969F!important;\n        color: #fff !important;\n    }\n    .custom-select-item.is-selected {\n        background-color: #fff!important;\n        color: #000 !important;\n    }\n    .custom-select-toggle:after {\n        background-color: #88969F !important;\n    }\n}\n\n.custom-form__heading {\n    text-transform: uppercase;\n    font-size: var(--global-h2-font-size);\n}\n\n.custom-form__footer {\n    justify-content: center;\n}\n\n.modal-content {\n    background: rgba(0, 0, 0, 0.4);\n}\n\n.custom-form__img-col {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    padding: 0px;\n    width: 100%;\n    height: 100%;\n    max-width: unset;\n    z-index: -1;\n}\n\n.custom-form__img-block {\n    height: 100%;\n}\n\n/* END */",
+    "action": "Second Option Modal - Image BG, Just Title, sub and Email",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-1fd6d3e0",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".custom-form {\n    background: #fff;\n}\n.custom-form__header {\n    max-width: 1000px;\n    h2{\n        font-size: 42px;\n        @media(max-width: 768px){\n            font-size: 36px;\n        }\n    }\n}\n\n.lp-close-icon {\n    color: #999;\n}\n.close {\n    top: 1vh;\n    right: 1vh;\n}\n\n.custom-form__container {\n    max-width: 1440px;\n}\n\n.lp-input{\n    background-color: #fff !important;\n    color: #000 !important;\n    border: 1px solid #999 !important;\n}",
+    "action": "Blog Modal",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-d7869e4f",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".custom-form__footer {\n  justify-content: center;\n}\n\n.custom-form__heading {\n    color: #012169 !important;\n}",
+    "action": "Custom Form for Blog Details",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "modal-visionary-6cd98dd4",
+    "element": "Modal",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media only screen and (max-width: 767px) {\n  .lp-close {\n    right: 2vw;\n    top: 2vh;\n  }\n}\n\n.email-sign-up-modal .email-sign-up-modal__form .email-sign-up-modal__close {\n  opacity: 1 !important;\n}\n\n.close .lp-close-icon,\n.close img {\n  filter: invert(0) !important;\n\n  @media (max-width: 768px) {\n    filter: invert(1) !important;\n  }\n}\n\n.custom-form {\n  color: var(--typography-dark);\n  background-color: var(--primary-light) !important;\n\n  &__header {\n    max-width: 860px;\n  }\n\n  &__download-form {\n    justify-content: center;\n  }\n\n  @media only screen and (max-width: 768px) {\n    &__heading {\n      font-size: 27px;\n    }\n  }\n}\n\n.lp-input {\n  background: #f3f3f3;\n  color: #BBB;\n\n  &:hover {\n    border-color: transparent;\n    background: #f3f3f3;\n    color: #BBB;\n  }\n\n  &:focus {\n    border-color: transparent;\n    background: var(--typography-dark);\n    color: var(--typography-light);\n  }\n\n  &:not(:placeholder-shown):invalid {\n    border-color: transparent;\n    background: var(--typography-dark);\n    color: var(--typography-light);\n  }\n}\n\n.custom-select {\n  .custom-select-content {\n    background-color: var(--primary-light) !important;\n    color: var(--typography-dark) !important;\n  }\n\n  .custom-select-item:hover {\n    background-color: var(--typography-dark) !important;\n    color: var(--typography-light) !important;\n  }\n\n  .custom-select-item.is-selected {\n    background-color: var(--typography-dark) !important;\n    color: var(--typography-light) !important;\n  }\n}\n\n.email-sign-up-modal__title {\n  text-transform: var(--text-case);\n  font-size: var(--global-h2-font-size);\n  color: #012169 !important;\n}\n\n.email-sign-up-modal__subheader {\n  font-size: var(--global-body-font-size);\n}\n\n@media only screen and (max-width: 767px) {\n\n  .modals>.modal .close,\n  body>.modal .close {\n    right: 2vw !important;\n    top: 2vh !important;\n  }\n}",
+    "action": "Email Sign Up Modal Code",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-044027db",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Global Header Navbar - WB */\n#global-navbar{\n    .header-container{\n        .header-navigation__link{\n            text-transform: uppercase;\n            letter-spacing: 1px;\n            &:after{\n                background-color: #000000;\n            }\n            &:before{\n                background-color: #003DA5;\n            }\n        }\n        .header-navigation__sub-nav {\n            padding: 0;\n            li{\n                &:hover {\n                    background-color: #000;\n                    a{\n                        color: #fff;\n                    }\n                }\n            }\n            .header-navigation__sub-nav-link{\n                color: #000;\n                text-transform: uppercase;\n                letter-spacing: 1px;\n                padding: 1rem\n            }\n        }\n        .header-search-btn{\n            border-color: #DA1A2C;\n            &:after {\n                    background-color: #DA1A2C;\n                }\n            &:hover {\n                background-color: #DA1A2C;\n                &:after {\n                    background-color: #FFF;\n                }\n            }\n        }\n        .header-hamburger-btn:empty{\n            border-color: #DA1A2C;\n            &:before, &:after{\n                    background-color: #DA1A2C;\n                }\n            &:hover {\n                background-color: #DA1A2C;\n                &:before, &:after{\n                    background-color: #fff;\n                }\n            }\n        }\n    }\n    .header.scroll{\n        background-color: rgba(248, 248, 248, .9) !important;\n        color: #000 !important;\n        \n    }\n    @media (max-width: 768px) {\n        .header {\n            background-color: #f8f8f8!important;\n        }\n    }\n}\n/*End - Global Header Navbar - Nicolas V*/",
+    "action": "Header Nav Theme Code",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-5b691543",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Global Header Navbar - WB */\n\n#global-navbar .header.scroll{\n    .header-logo__img.header-logo__img--dark{\n        display: block!important;\n    }\n    .header-logo__img.header-logo__img--light{\n        display: none!important;\n    }\n}\n\n#global-navbar{\n    .header-container{\n        .header-navigation__link{\n            text-transform: uppercase;\n            letter-spacing: 0px;\n            &:after{\n                background-color: #fff;\n            }\n            &:before{\n                background-color: #fff;\n            }\n        }\n        .header-navigation__sub-nav {\n            padding: 0;\n            li{\n                background-color: #fff;\n                &:hover {\n                    background-color: #042D49;\n                    a{\n                        color: #fff;\n                    }\n                }\n            }\n            .header-navigation__sub-nav-link{\n                color: #000;\n                text-transform: uppercase;\n                letter-spacing: 1px;\n                padding: 1rem\n            }\n        }\n        .header-search-btn{\n            border-color: #fff;\n            &:after {\n                    background-color: #fff;\n                }\n            &:hover {\n                background-color: #fff;\n                &:after {\n                    background-color: #042D49;\n                }\n            }\n        }\n        .header-hamburger-btn:empty{\n            border-color: #fff;\n            &:before, &:after{\n                    background-color: #fff;\n                }\n            &:hover {\n                background-color: #fff;\n                &:before, &:after{\n                    background-color: #042D49;\n                }\n            }\n        }\n    }\n    .header.scroll{\n        background-color: rgba(246, 244, 243, .9) !important;\n        color: #000 !important;\n            .header-container{\n            .header-navigation__link{\n                text-transform: uppercase;\n                letter-spacing: 0px;\n                &:after{\n                    background-color: #042D49;\n                }\n                &:before{\n                    background-color: #042D49;\n                }\n            }\n            .header-navigation__sub-nav {\n                padding: 0;\n                li{\n                    background-color: #fff;\n                    &:hover {\n                        background-color: #042D49;\n                        a{\n                            color: #fff;\n                        }\n                    }\n                }\n                .header-navigation__sub-nav-link{\n                    color: #000;\n                    text-transform: uppercase;\n                    letter-spacing: 1px;\n                    padding: 1rem\n                }\n            }\n            .header-search-btn{\n                border-color: #042D49;\n                &:after {\n                        background-color: #042D49;\n                    }\n                &:hover {\n                    background-color: #042D49;\n                    &:after {\n                        background-color: #fff;\n                    }\n                }\n            }\n            .header-hamburger-btn:empty{\n                border-color: #042D49;\n                &:before, &:after{\n                        background-color: #042D49;\n                    }\n                &:hover {\n                    background-color: #042D49;\n                    &:before, &:after{\n                        background-color: #fff;\n                    }\n                }\n            }\n        }\n        /*Change contact us button for phone number in header nav - WB Nicolas V*/\n        .header-buttons-wrapper .header-contact-btn{\n            color: #042D49!important;\n            border-color: #042D49!important;\n            &:hover{\n                background-color: #042D49!important;\n                color: #fff!important;\n            }\n        }\n    }\n    @media (max-width: 788px) {\n        .header {\n            .header-logo__img.header-logo__img--dark{\n                display: block!important;\n            }\n            .header-logo__img.header-logo__img--light{\n                display: none!important;\n            }\n            background-color: #F6F4F3!important;\n            color: #000 !important;\n            .header-container{\n            .header-navigation__link{\n                text-transform: uppercase;\n                letter-spacing: 0px;\n                &:after{\n                    background-color: #042D49;\n                }\n                &:before{\n                    background-color: #042D49;\n                }\n            }\n            .header-navigation__sub-nav {\n                padding: 0;\n                li{\n                    background-color: #fff;\n                    &:hover {\n                        background-color: #042D49;\n                        a{\n                            color: #fff;\n                        }\n                    }\n                }\n                .header-navigation__sub-nav-link{\n                    color: #000;\n                    text-transform: uppercase;\n                    letter-spacing: 1px;\n                    padding: 1rem\n                }\n            }\n            .header-search-btn{\n                border-color: #042D49;\n                &:after {\n                        background-color: #042D49;\n                    }\n                &:hover {\n                    background-color: #042D49;\n                    &:after {\n                        background-color: #fff;\n                    }\n                }\n            }\n            .header-hamburger-btn:empty{\n                border-color: #042D49;\n                &:before, &:after{\n                        background-color: #042D49;\n                    }\n                &:hover {\n                    background-color: #042D49;\n                    &:before, &:after{\n                        background-color: #fff;\n                    }\n                }\n            }\n        }\n        }\n    }\n}\n/*End - Global Header Navbar - Nicolas V*/",
+    "action": "Header Nav for scroll with dark items",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-83774e4b",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Header Search Icon - WB */\nbutton.header-search__btn:after{\n    background-color: #DA1A2C;\n}\n/*END */",
+    "action": "Search Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-577bec5e",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix Search Bar From Header Nav - WB Nicolas V */\n.header-search__input-holder{\n    color: #000;\n    .header-search__input{\n        background-color: #EEEDE9;\n    }\n    .header-search__btn:after{\n        --iconColor: #000;\n    }\n    .lp-input:not(:placeholder-shown) {\n        color: #000;\n    }\n    \n}\n\n.header-search-results{\n    .header-search-results__title{\n        color: #000;\n    }\n   .header-search-results__link{\n        color: #000;\n    } \n    .header-properties{\n        .header-properties__card{\n            .header-properties__name, .header-properties__title{\n                color: #000;\n            }\n        }\n        .header-properties__tag{\n            color: #fff;\n            background-color: #000;\n            text-transform: uppercase;\n        }\n    }\n}\n/*END*/",
+    "action": "Fix Search Section from Header Nav",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-199f7961",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Header, Make White logo appears - WB Nicolas V*/\n#global-navbar.is-background-color-light .header-logo__img--light {\n    display: block;\n}\n\n#global-navbar.is-background-color-light .header-logo__img--dark {\n    display: none;\n}\n/*END*/",
+    "action": "Show Ligth logo",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-2ff02828",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Change contact us button for phone number in header nav - WB Nicolas V*/\n#global-navbar{\n    .header-buttons-wrapper .header-contact-btn{\n        font-size: 0px;\n        &:before{\n            content: '(469) 219-9767';\n            font-size: 12px;\n        }\n    }\n}\n/*END*/",
+    "action": "Change contact us button for phone number in header nav",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-visionary-c9e142b0",
+    "element": "Header Nav",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - Logo Resize*/\nnav#global-navbar .header-logo {\n    height: 60px!important;\n    @media (max-width: 768px){\n       height: 60px!important;\n    }\n}\n/*END*/",
+    "action": "Logo Size",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-visionary-fd72d16e",
+    "element": "Side Menu",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Sidemenu close button on hover - WB  */\ndiv#global-sidemenu .sidemenu-close{\n    color: #F4C35D;\n    border-color: #F4C35D;\n    &:hover:after{\n        background: #102E4F!important;\n    }\n}\n\ndiv#global-sidemenu .sidemenu-close:hover {\n    background-color: #F4C35D;\n}\n/*End */",
+    "action": "Code for Close Button",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-visionary-ec2945af",
+    "element": "Side Menu",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix cut off items on side menu - WB  */\ndiv#global-sidemenu .sidemenu-navigation__link,\ndiv#global-sidemenu .sidemenu-navigation-sub-nav__link {\n    text-transform: uppercase;\n    letter-spacing: 1px;\n    -webkit-line-clamp: unset;\n    -webkit-box-orient: unset;\n}\n/*End */",
+    "action": "Fix cut off items",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-visionary-0e3e5038",
+    "element": "Side Menu",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Menu links and lines on side menu - WB */\ndiv#global-sidemenu .lp-a a:hover {\n    text-decoration-color: #fff;\n}\n\ndiv#global-sidemenu .lp-a a:active {\n    color: #fff!important;\n}\n\ndiv#global-sidemenu .lp-a a:focus {\n    text-decoration-color: #fff!important;\n}\n\ndiv#global-sidemenu .sidemenu-navigation__link:hover {\n    color: #fff;\n    opacity: 1;\n}\n\ndiv#global-sidemenu .sidemenu-footer:before{\n    background-color: #fff;\n    opacity: .5;\n}\n\n/*END*/",
+    "action": "Menu links on hover and middle line",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-visionary-1e1f7933",
+    "element": "Side Menu",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Make gap consistent between titles - WB Nicoals V*/\n@media (max-width: 768px) {\n    div#global-sidemenu .sidemenu-nav-holder {\n        gap: 28px;\n    }\n}\n/*END*/",
+    "action": "Make gap consistent between titles",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-visionary-2fd4f6cf",
+    "element": "Side Menu",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*----------- SIDE MENU -----------*/\n\n/*Start - Side menu - Avoid text cut-off on tablet view*/\ndiv#global-sidemenu .sidemenu-navigation__link {\n    -webkit-line-clamp: unset !important;\n}\n\n/*End*/\n\n\n/* START - Fix side menu accomodating too much space */\n/* Note: This also fixes the side menu links being wrapped with ellipsis*/\n/* Example: Home Val... to Home Valuation */\n.sidemenu:has(.sidemenu-wrapper) {\n    @media (min-width: 769px) {\n        width: auto;\n    }\n}\n\n/* END */\n\n/* START - Fix side menu scroll not calculating the overall height */\n.sidemenu-wrapper {\n    min-height: fit-content;\n    max-height: 100%;\n}\n\n/* END */\n\n/* START - Fix side menu width depending on the column number of links */\n/* Note: The side menu can only contain a maximum of 4 column */\n.sidemenu-nav-holder {\n    @media (min-width: 1025px) {\n        &:has(> .sidemenu-navigation:nth-child(1):last-child) {\n            grid-template-columns: auto;\n        }\n\n        &:has(> .sidemenu-navigation:nth-child(2):last-child) {\n            grid-template-columns: auto auto;\n        }\n\n        &:has(> .sidemenu-navigation:nth-child(3):last-child) {\n            grid-template-columns: auto auto auto;\n        }\n\n        &:has(> .sidemenu-navigation:nth-child(4):last-child) {\n            grid-template-columns: auto auto auto auto;\n        }\n    }\n\n    @media (max-width: 768px) {\n        gap: 28px !important;\n    }\n}\n\n/* END */\n\n/* START - Fix the side menu underline */\n.sidemenu-wrapper {\n    @media (max-width: 768px) {\n        width: 100%;\n    }\n}\n\n.sidemenu-footer {\n    @media (min-width: 769px) {\n        &:before {\n            width: 100%;\n        }\n    }\n}\n\n.sidemenu-socials-block {\n    width: 450px !important;\n\n    @media (max-width: 768px) {\n        &:before {\n            width: 100%;\n        }\n    }\n}\n\n/* END */\n\n/* START - Fix side menu large vertical paddings on mobile */\n#global-sidemenu {\n    @media (max-width: 768px) {\n        padding-top: 128px;\n        padding-bottom: 48px;\n    }\n}\n\n/* END */\n\n/* START - Fix the side menu contact details vertical padding */\n.sidemenu-footer {\n    @media (min-width: 1025px) {\n        padding-top: 70px;\n    }\n\n    @media (max-width: 768px) {\n        padding-top: 0px;\n        padding-bottom: 0px;\n    }\n}\n\n/* END */\n\n/* START - Fix side menu office hours details not having 2nd line */\n.sidemenu__col-description {\n    white-space: pre-line;\n}\n\n/* END */\n\n/* START - Reposition the side menu close button on mobile */\n.sidemenu-close {\n    @media (max-width: 768px) {\n        top: 16px;\n        right: 16px;\n    }\n}\n\n/* END */",
+    "action": "Side Menu Vertical",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "contact-form-visionary-ae06d9cd",
+    "element": "Contact Form",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Global Contact Form Modal - Nicolas V*/\n#modal-global-contact-us{\n    .contact-form-modal-details__title{\n        max-width: 100%;\n        color: #000;\n    }\n    .contact-form-modal-agent__contact {\n        max-width: 100%;\n        color: #000;\n    }\n    .contact-form-modal-agent__name, .lp-pre-line{\n        text-transform: uppercase;\n        letter-spacing: 1px;\n    }\n    .lp-label {\n        font-size: 14px;\n        font-weight: 500;\n        text-transform: uppercase;\n    }\n    .lp-a a {\n        text-transform: uppercase;\n        letter-spacing: 1px;\n        color: #000;\n        &:hover{\n            color: #818285;\n            text-decoration-color: #818285;\n        }\n    }\n    >.lp-close {\n        @media (max-width: 1024px) {\n        display: block;\n        top: 3vh;\n        }\n    }\n    .lp-close-icon{\n        color: #000;\n        @media(max-width: 780px){\n            color: #fff;\n        }\n    }\n    .contact-form-modal__close{\n        @media(max-width: 780px){\n            display: none;\n        }\n    }\n}\n\n#global-mobile-contact{\n    .contact-form {\n        @media (max-width: 1980px) {\n            --padding: 0;\n        }\n        .contact-form__container{\n            padding: 0 0;\n        }\n    }\n}\n\n/*End - Global Contact Form Modal - Nicolas V*/",
+    "action": "Contact Form Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "contact-form-visionary-f4b4e35d",
+    "element": "Contact Form",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Contact Overlay Close Button resized - WB */\n@media (min-width:1025px){\n    .contact-form-modal__close:after {\n        height: 25px;\n        width: 35px;\n    }\n}\n/*END*/",
+    "action": "Fix Close Button",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "contact-form-visionary-eb0bdae5",
+    "element": "Contact Form",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START Contact Overlay Prevent Blur Image in Mobile - WB Nicolas V*/\n.contact-form-modal__bg-image{\n  content: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1920/https://media-production.lp-cdn.com/media/8598461f-6809-41fd-8a93-b7e4461b5df3');\n}\n/*END*/",
+    "action": "Contact Overlay Prevent Blur Image",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-visionary-13f038b2",
+    "element": "Footer",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Global Footer - WB Nicolas V*/\n#global-footer{\n    .footer-logos-row{\n        margin-bottom: 40px;\n    }\n    .footer-contact-row {\n        border-bottom: 1px solid rgba(229, 208, 160, .9);\n    }\n    .footer__section-title{\n        font-size: var(--lp-h4-font-size);\n        letter-spacing: 1px;\n        display: none;\n    }\n    .footer__col-title{\n        font-size: 18px;\n        font-weight: 400;\n        letter-spacing: 1px;\n        opacity: 1;\n    }\n    .footer__col-description{\n        @media (min-width: 769px) {\n            max-width: 30ch;\n        }\n        text-transform: uppercase;\n    }\n    @media (max-width: 768px) {\n        .footer__section-content {\n            flex-direction: column;\n            gap: 35px;\n        }\n    }\n    @media (max-width: 1024px) {\n        .footer-navigation{\n            grid-auto-flow: unset;\n            max-width: 100%;\n            min-width: 100%;\n        }\n    }\n    .lp-a a {\n        text-transform: uppercase;\n        letter-spacing: 1px;\n        &:hover{\n            color: #E5D0A0;\n            text-decoration-color: #E5D0A0;\n        }\n    }\n}\nfooter#global-footer{\n    @media(min-width: 780px){\n        .footer-navigation__item+.footer-navigation__item{\n            border-left: 1px solid rgba(229, 208, 160, .9);\n        }\n        .footer-copyright__privacy, .footer-copyright__privacy-policy {\n            border-left: 1px solid #E5D0A0;\n        }\n    }\n}\n\nfooter#global-footer{\n    @media (max-width: 678px) {\n        .lp-socials{\n            justify-content: center!important;\n            padding: 0px!important;\n            li{\n                justify-content: center!important;\n            }\n        }\n    }\n}",
+    "action": "Footer Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-visionary-60c79fe0",
+    "element": "Footer",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Increase the logo size - WB */\n@media(max-width: 767px){\n    footer#global-footer .footer-logos-row{\n        .footer-logo {\n            max-height: 120px;\n            max-width: 200px;\n        }\n    }\n}\n\nfooter#global-footer .footer-logos-row{\n    .footer-logo{\n        max-height: 120px;\n        max-width: 200px;\n    }\n}\n/*End*/",
+    "action": "Footer Logo Size",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-visionary-de50a479",
+    "element": "Footer",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Add pointer to navigation section from footer - WB*/\nfooter#global-footer .lp-a a {\n    cursor: pointer;\n}\n/*END*/",
+    "action": "Add pointer to navigation section",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-visionary-5e9050b7",
+    "element": "Footer",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Add gap between hyperlink titles - WB Nicolas V*/\n@media(max-width: 568px){\n    footer#global-footer .footer-navigation-row ul li{\n        padding: 5px 0px;\n    }\n}\n/*END*/",
+    "action": "Add gap between hyperlink titles in Mobile",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "instagram-visionary-af3a588a",
+    "element": "Instagram",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".instagram-feed__title-group .instagram-feed__icon:after{\n    background-color: #3BF40D;\n}",
+    "action": "Fix Instagram color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "floating-buttons-bottom-visionary-c90efc36",
+    "element": "Floating Buttons - Bottom",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*mobile contact button*/\nbody>div.mobile-contact-wrapper{\n    .floating-contact-button__btn-connect {\n        border: 2px solid #0043FF!important;\n        background-color: #0043FF!important;\n        color: #fff!important;\n        font-weight: 500;\n        &:hover{\n            border-color: #0043FF!important;\n            background-color: #fff!important;\n            color: #0043FF!important; \n        }\n    }\n    .floating-contact-button__btn-search{\n        border: 2px solid #0043FF!important;\n        background-color: #0043FF!important;\n        color: #fff!important;\n        &:hover{\n            border-color: #0043FF!important;\n            background-color: #fff!important;\n            color: #0043FF!important; \n        }\n    }\n    .contact-form__item .lp-input{\n        color: #000;\n        opacity: 1;\n        border-color: #000;\n    }\n    h3{\n        color: #000;\n    }\n    .lp-tcr-content{\n        color: #000;\n    }\n    .floating-contact-button-pop-up__close {\n        color: #000!important;\n        &:before{\n            filter: none;\n        }\n    }\n    .custom-select .custom-select-toggle:after {\n        background-color: #FF1200!important;\n    }\n    .lp-input:not(:placeholder-shown):invalid {\n        border-color: #000;\n    }\n    .floating-contact-button-pop-up{\n        background-color: #F7F5EE!important;\n        border: 1px solid #000;\n        @media only screen and (max-width:768px){\n            padding-top: 96px;\n        }\n    }\n\n}\n@media (max-width: 400px) {\n    .floating-contact-button-pop-up {\n        height: 85vh;\n        overflow-y: auto;\n    }\n}\n\n@media (min-width: 1025px) {\n    .floating-contact-button-pop-up {\n        max-width: 637px;\n        max-height: 550px;\n        overflow: auto;\n    }\n}",
+    "action": "Code for Floating buttons",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "floating-buttons-bottom-visionary-9c70336f",
+    "element": "Floating Buttons - Bottom",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*mobile contact button*/\nbody>div.mobile-contact-wrapper{\n    .floating-contact-button__btn-connect {\n        border: 2px solid #0043FF!important;\n        background-color: #0043FF!important;\n        color: #fff!important;\n        font-weight: 500;\n        &:hover{\n            border-color: #0043FF!important;\n            background-color: #fff!important;\n            color: #0043FF!important; \n        }\n    }\n    .floating-contact-button__btn-search{\n        border: 2px solid #0043FF!important;\n        background-color: #0043FF!important;\n        color: #fff!important;\n        &:hover{\n            border-color: #0043FF!important;\n            background-color: #fff!important;\n            color: #0043FF!important; \n        }\n    }\n    .contact-form__item .lp-input{\n        color: #000;\n        opacity: 1;\n        border-color: #000;\n    }\n    h3{\n        color: #000;\n    }\n    .lp-tcr-content{\n        color: #000;\n    }\n    .floating-contact-button-pop-up__close {\n        color: #000!important;\n        &:before{\n            filter: none;\n        }\n    }\n    .custom-select .custom-select-toggle:after {\n        background-color: #FF1200!important;\n    }\n    .lp-input:not(:placeholder-shown):invalid {\n        border-color: #000;\n    }\n    .floating-contact-button-pop-up{\n        background-color: #F7F5EE!important;\n        border: 1px solid #000;\n        @media only screen and (max-width:768px){\n            padding-top: 96px;\n        }\n    }\n\n}\n.floating-contact-button-pop-up__form {\n    .custom-select{\n        display: none!important;\n    }\n}\n\n@media (max-width: 768px) {\n  .floating-contact-button-pop-up {\n    position: fixed !important;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    overflow-y: auto;\n    -webkit-overflow-scrolling: touch;\n    padding: 16px;\n    box-sizing: border-box;\n  }\n\n  .floating-contact-button-pop-up__form {\n    max-width: 100%;\n    margin: 0 auto;\n  }\n}\n/*END*/\n\n#global-mobile-contact{\n    .floating-contact-button-pop-up{\n        padding-bottom: 20px;\n        padding-top: 20px;\n    }\n    .floating-contact-button-pop-up__input-group.lp-input-group{\n        textarea.lp-input{\n            height: 70px;\n        }\n    }\n}",
+    "action": "Code for Buttons Better",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-68cf147b",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix padding and socials theme - WB */\n.opening-search{\n    &__image-wrapper{\n        padding: 0;\n    }\n}\n\n.lp-socials__link{\n    color: #DA1A2C;\n    background-color: #fff;\n    border-color: #fff;\n    &:hover{\n        color: #fff!important;\n        background-color: transparent!important;\n        border-color: #fff!important;\n    }\n}\n/*END*/",
+    "action": "Fix padding and socials theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-fc10ed7f",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Arrows - WB */\nbutton.lp-arrow{\n    border-color: #fff;\n    &:after{\n        background: #fff;\n    }\n    &:hover {\n        background-color: #fff!important;\n        &:after{\n            background: #DA1A2C;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #fff;\n        color: #fff;\n        &:hover {\n            background-color: #fff;\n            color: #DA1A2C;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-68596d10",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* START - Theme the opening element search bar */\n.opening-search__search-input {\n    background: transparent;\n    color: #fff;\n    border: 1px solid #fff;\n    &:hover{\n        background: transparent;\n        border-color: #fff;\n        color: #fff;\n    }\n}\n\n.opening-search__pin-map {\n    &:after {\n        background: #fff;\n    }\n}\n\n/* END */\n\n/*Search Bar Theming*/\n\n.opening-search__search-results {\n    background-color: #fff;\n    a{\n        color: #000;\n         &:hover{\n            color: #fff;\n            background-color: #58585B;\n        }\n    }\n   \n}\n\n.lp-input--dark:not(:placeholder-shown) {\n    background-color: transparent;\n    border: 1px solid #fff;\n}\n\n.lp-input--dark:focus{\n    background: transparent;\n    border-color: #fff;\n}\n/* END */",
+    "action": "Search Bar Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-c65ceff9",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Add logo instead of title */\n.opening-search__content{\n    \n    align-items: center;\n    @media only screen and (min-width: 1550px){\n        padding: 0 0 324px 46px;\n     }\n     @media only screen and (max-width: 1540px){\n        padding: 0 0 224px 46px;\n     }\n    @media(max-width: 568px){\n        padding: 267px 0 49px;\n    }\n    .splide__list{\n        .opening-search__pre-title {\n            font-size: 0;\n        }\n        .opening-search__title{\n            font-size: 0;\n        }\n        .opening-search__title:before{\n            content: \"\";\n            width: 100%;\n            height: 350px;\n            width: 500px;\n            display: block;\n            background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/dea45ce9-92fc-4398-8785-01a053dbf9d0);\n            background-size: contain;\n            background-repeat: no-repeat;\n            background-position: center;\n            @media(max-width: 568px){\n                height: 200px;\n            }\n        }\n    }\n}\n/* END */",
+    "action": "Add logo centeres in Homepage Opening",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-f34a2b00",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media(min-width: 780px){\n    .opening-search__content{\n        align-items: center;\n    }\n    .opening-search__search-box {\n        align-self: center;\n        position: relative;\n    }\n    \n    .opening-search__content{\n            padding: 0 0 84px 46px;\n    }\n    \n    .opening-search__text-slider {\n        text-align: center;\n    }\n}\n/*START remove Sound Icon*/\n.opening-search-sound {\n    display: none!important;\n}\n/*END*/\n\n/* START - Theme the opening element search bar */\n.opening-search__search-input {\n    background: #fff;\n    color: #537497;\n    border: 1px solid #fff;\n    &:hover{\n        background: #fff;\n        border-color: #fff;\n        color: #537497;\n    }\n}\n\n.opening-search__pin-map {\n    &:after {\n        background: #537497;\n    }\n}\n\n/* END */\n\n/*Search Bar Theming*/\n\n.opening-search__search-results {\n    background-color: #fff;\n    a{\n        color: #000;\n         &:hover{\n            color: #fff;\n            background-color: #537497;\n        }\n    }\n}\n\n.lp-input--dark:not(:placeholder-shown) {\n    background-color: #fff;\n    border: 1px solid #fff;\n    color: #537497;\n}\n\n.lp-input--dark:focus{\n    background: #fff;\n    border-color: #fff;\n    color: #537497;\n}\n/* END */",
+    "action": "Center Content",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "homepage-opening-visionary-df9c2278",
+    "element": "Homepage Opening",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - responsive layout rules for opening-search section on tablets and up */\n@media (min-width: 768px) {\n    .opening-search {\n        &__container {\n            padding: 0;\n            align-items: center;\n        }\n\n        &__text-slider {\n            max-width: unset;\n        }\n\n        &__content {\n            padding: 0;\n            width: min-content !important;\n            margin-left: auto;\n            margin-right: auto;\n        }\n\n        &__search-box {\n            position: unset;\n            padding: 0;\n            margin-top: 1.5rem;\n            margin-left: auto;\n            margin-right: auto;\n        }\n\n        &__title,\n        &__description {\n            text-align: center;\n        }\n    }\n}\n/*END*/\n\n/*START - container sets up relative positioning context */\n.opening-search {\n    &__container {\n        position: relative;\n    }\n\n    &__predefined-links {\n        border-color: var(--light-gray);\n    }\n\n    &__search-results {\n        background-color: var(--white);\n\n        .opening-search__results-link {\n            color: var(--black);\n\n            &:hover,\n            &:focus,\n            &:target {\n                background-color: var(--primary);\n                color: var(--white);\n            }\n        }\n    }\n\n    &__pre-title {\n        text-align: center;\n        margin-bottom: 12px;\n\n        @media (max-width: 768px) {\n            margin-bottom: unset;\n        }\n    }\n\n    &__content {\n        position: unset !important;\n    }\n}\n/*END*/\n\n/*START - icon pseudo-element styled using accent color variable */\n.lp-icon:after {\n    --iconColor: var(--accent);\n}\n/*END*/\n\n/*START - sound button hidden and disabled by default */\n.opening-search-sound {\n    display: none !important;\n    pointer-events: none !important;\n}\n/*END*/\n\n/*START - contact button layout styles on homepage section */\n.homepage-opening__contact-container {\n    padding-top: 1rem;\n    max-width: 625px;\n    margin: 0 auto;\n    display: flex;\n    gap: 1rem;\n\n    @media (max-width: 768px) {\n        flex-direction: column;\n    }\n\n    a {\n        flex: 1;\n        border-color: var(--white) !important;\n\n        &:hover {\n            background: var(--white) !important;\n            color: var(--primary) !important;\n        }\n    }\n}\n/*END*/\n\n/*START - adjust spacing on small mobile screens for search box */\n@media (max-width: 560px) {\n    .opening-search__search-box {\n        margin-top: 0 !important;\n    }\n}\n/*END*/",
+    "action": "Other Center Content",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "gsm-visionary-b410bdf6",
+    "element": "GSM",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START -- GSM Styling*/\n.gallery-style-menu-title-group{\n    margin-bottom: 30px;\n}\n\n.gallery-style-menu-grid__item {\n    .gallery-style-menu-grid__title {\n        color: var(--lp-color-primary-1);\n        /*center-align text*/\n        text-align: center;\n        /*move text to center*/\n        margin-top: auto;\n        margin-bottom: auto;\n        /*remove accent line*/\n        border-bottom: none !important;\n        &::after {\n            display: none;\n        }\n    }\n    \n    /*add opacity on idle*/\n    \n    &::before {\n        background-color: rgba(0,0,0,0.3);\n    }\n    &:hover{\n        &::before {\n            background-color: rgba(0,0,0,0.7);\n        }  \n    }      \n}\n\n/*END -- GSM Styling*/",
+    "action": "GSM Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "gsm-visionary-b2eba9c5",
+    "element": "GSM",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".gallery-style-menu-grid__item {\n    aspect-ratio: 1/0.75;\n}\n.gallery-style-menu-grid__title {\n    text-align: center;\n    border-bottom: none !important;\n}\n\n.gallery-style-menu-title-group {\n    max-width: 1400px !important;\n}",
+    "action": "Square GSM",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "gsm-visionary-4d0c6819",
+    "element": "GSM",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START -- GSM Styling*/\n.gallery-style-menu-title-group{\n    margin-bottom: 30px;\n}\n.gallery-style-menu-grid{\n    gap: 0px;\n}\n.gallery-style-menu{\n    padding: 0px;\n}\n.gallery-style-menu-grid__item {\n    aspect-ratio: 1 / 1;\n    .gallery-style-menu-grid__title {\n        color: var(--lp-color-primary-1);\n        /*center-align text*/\n        text-align: center;\n        /*move text to center*/\n        margin-top: auto;\n        margin-bottom: auto;\n        /*remove accent line*/\n        border-bottom: none !important;\n        &::after {\n            display: none;\n        }\n    }\n    \n    /*add opacity on idle*/\n    \n    &::before {\n        background-color: rgba(0,0,0,0.3);\n    }\n    &:hover{\n        &::before {\n            background-color: rgba(0,0,0,0.7);\n        }  \n    }      \n}\n\n/*END -- GSM Styling*/",
+    "action": "GSM For Grid Neighborhoods",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agents-slider-visionary-da449222",
+    "element": "Agents Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Team Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agents-slider-visionary-77806b32",
+    "element": "Agents Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media (max-width: 780px) {\n    .lp-vertical-paddings {\n        padding-top: 0px;\n    }\n}\n\n/*Fix Theme Button Label - WB Nicolas V*/\n.agents-slider__position{\n    color: #102E4F;\n    border-color: #F4C35D;\n    background-color: #F4C35D;\n    &:hover{\n        background-color: transparent!important;\n        border-color: #F4C35D!important;\n        color: #F4C35D!important;\n    }\n}\n.agents-slider__item:hover{\n    .agents-slider__position{\n        color: #F4C35D!important;\n        border-color: #F4C35D;\n        background-color: transparent;\n    }\n}\n/*END*/\n\n/*Center Label in Mobile - WB Nicolas V*/\n@media(max-width: 568px){\n    .agents-slider__slider-wrapper{\n        text-align: center;\n    }\n}\n/*END*/",
+    "action": "Label Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agent-card-visionary-da336359",
+    "element": "Agent Card",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Agent Card - WB */\n@media (min-width:1025px){\n    .agent-card__image-wrapper img{\n        height: 82%;\n    }\n    .agent-card__heading {\n        padding: 44px;\n    }\n}\n\n.agent-card__pre-title:before {\n    border-color: #DBB21B;\n}\n\n.lp-text--pretitle {\n    color: #DBB21B;\n}\n\n/*END*/",
+    "action": "Fix image height and change pretitle and line color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "stats-visionary-6593fe11",
+    "element": "Stats",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C !important;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style - Mobile View",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "stats-visionary-0e82dc2d",
+    "element": "Stats",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix font-size, and reduce some margin and paddings - WB */\n.company-stats .company-stats__row {\n    padding-top: 0;\n}\n\ndiv.stats-list-title-group {\n    margin-bottom: 0px;\n}\n\n.lp-title-group{\n    max-width: 1260px;\n}\n\n.stats-list__title{\n    font-size: 50px;\n}\n/*END*/\n.lp-vertical-paddings {\n    padding-bottom: 0px;\n    padding-top: 96px;\n}\n\n@media (max-width: 568px) {\n    .lp-vertical-paddings {\n        padding-bottom: 64px;\n        padding-top: 64px;\n    }\n}",
+    "action": "Fix font size and some paddings and margins",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-slider-visionary-f8e813ac",
+    "element": "Testimonial Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix font-size, and reduce some margin and paddings - WB */\n.company-stats .company-stats__row {\n    padding-top: 0;\n}\n\ndiv.stats-list-title-group {\n    margin-bottom: 0px;\n}\n\n.lp-title-group{\n    max-width: 1260px;\n}\n\n.stats-list__title{\n    font-size: 40px;\n}\n/*END*/",
+    "action": "Arrow Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-slider-visionary-116b18f4",
+    "element": "Testimonial Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix header width and quotes theme by WB Nicolas V*/\n.testimonials-slider-heading{\n    max-width: 600px;\n}\n\n.link-icon--quotes:after{\n    color: #FFFFFF;\n}\n\n.testimonials-slider-heading__description{\n    opacity: 1;\n}\n/*END*/",
+    "action": "Fix title width, quotes color and description opacity",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-slider-visionary-e0127726",
+    "element": "Testimonial Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".link-icon--quotes:after {\n    content: '';\n    background: url(\n'https://media-production.lp-cdn.com/media/03a35136-7741-4764-9e9c-ec627e442b00') no-repeat center center/cover;\n    position: absolute;\n    top: 25px;\n    left: 13px;\n    width: 30px;\n    height: 30px;\n    z-index: 999;\n    mask-image: none !important;\n    @media (max-width: 560px){\n        width: 23px;\n        height: 23px;\n        top: 15px;\n        left: 7.5px;\n    }\n    @media (min-width: 1200px){\n        top: 25px;\n        left: 13px;\n        width: 30px;\n        height: 30px;\n    }\n}",
+    "action": "Add logo to qoutes",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-02dab621",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-f1a92107",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Card and label Theme by WB */\r\n.properties-slider-card__tag {\r\n    background-color: #343995;\r\n    color: #fff;\r\n    text-transform: uppercase;\r\n    letter-spacing: 2px;\r\n}\r\n\r\n.properties-slider-card__feature{\r\n    border: 1px solid #fff;\r\n    background-color: transparent;\r\n    color: #fff;\r\n}\r\n/*END*/\r\n\r\n\r\n@media (max-width: 560px) {\r\n    .properties-slider__arrow:after {\r\n        background: #CB8C11;\r\n    }\r\n    .properties-slider__arrow:hover:after {\r\n        background: #F3B202;\r\n    }\r\n}",
+    "action": "Fix Card & Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "home-valuation-visionary-59cce37f",
+    "element": "Home Valuation",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Steps theme by WB */\ndiv.home-valuation .home-valuation-form .home-valuation-tabs .home-valuation__tab--active {\n    background-color: #DA1A2C!important;\n    border-color: #DA1A2C;\n    color: #fff!important;\n}\n\ndiv.home-valuation .home-valuation-form .home-valuation-tabs .home-valuation-tabs__item {\n    border-color: #DA1A2C;\n    background-color: transparent;\n    color: #DA1A2C;\n}\n/*END*/",
+    "action": "Steps Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "home-valuation-visionary-543ccbc6",
+    "element": "Home Valuation",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix Icon color, drowdown color and disclaimer color - WB Nicolas V */\ndiv.home-valuation .home-valuation-form{\n    .lp-input-icon:after {\n        --iconColor: #333;\n    }\n    .lp-input{\n        color: #000!important;\n    }\n}\n\ndiv.custom-select{\n    .custom-select-content .custom-select-item:hover{\n        color: #fff;\n        background-color: #333;\n    }\n    .custom-select-toggle:after{\n        background-color: #333;\n    }\n}\n\ndiv.home-valuation .lp-disclaimer {\n    color: #fff;\n}\n\n\n/*END*/",
+    "action": "Fix Icon color, drowdown color and disclaimer color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-slider-visionary-02dab621",
+    "element": "Neighborhoods Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-slider-visionary-2b599d5d",
+    "element": "Neighborhoods Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Bottom line and arrow color - WB */\n.neighborhoods-slider__list-item.is-active {\n    border-bottom-color: #88969F;\n}\n\n.neighborhoods-slider__list-item:after{\n    --iconColor: #88969F;\n}\n.neighborhoods-slider__list-slider:after{\n    display: none;\n}\n.neighborhoods-slider__list-item-text {\n    text-transform: uppercase;\n}\n/*END*/",
+    "action": "Bottom line and arrow color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "newsletter-sign-up-visionary-3b0ade80",
+    "element": "Newsletter Sign Up",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix border lines and text color - WB Nicolas V*/\n.lp-input {\n    color: #000;\n}\n/*END*/",
+    "action": "Fix border lines color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "newsletter-contact-cta-visionary-f39d6caa",
+    "element": "Newsletter + Contact CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix lines color - WB */\n.newsletter-contact-cta__word-divide:after, .newsletter-contact-cta__word-divide:before{\n    background: #DA1A2C;\n    opacity: 1;\n}\n.newsletter-contact-cta__description{\n    opacity: 1;\n}\n.lp-input-icon:after{\n    --iconColor: #DA1A2C;\n}\n/*END*/",
+    "action": "Lines Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "newsletter-contact-cta-visionary-3f7147ec",
+    "element": "Newsletter + Contact CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Center Content - WB Nicolas V*/\n.newsletter-contact-cta__heading {\n    max-width: 650px;\n}\n\n@media (min-width: 701px) {\n     div.newsletter-contact-cta__block {\n        width: 80%;\n    }\n}\n.newsletter-contact-cta__wrapper {\n    justify-content: center;\n}\n/*END*/",
+    "action": "Center Content WWU",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "newsletter-contact-cta-visionary-3bbfbaec",
+    "element": "Newsletter + Contact CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".newsletter-contact-cta__title:before {\n    content: 'BL';\n    display: block;\n    background-image: url('https://media-production.lp-cdn.com/media/47e6b6cc-224c-4024-920f-208f804c9e00');\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    color: rgba(255,255,255,0);\n    font-size: 70px;\n    margin-bottom: 24px;\n    \n}",
+    "action": "Add logo to Pre-title",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-2b4e8e58",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-bf80f63c",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - Custom Intro - WB JEN*/\n.custom-intro{\n    &__overlay {\n        height: 0px;\n    }\n    /*title*/\n    &__title--with-pretitle{\n        padding-top:20px;\n    }\n    &__content-box{\n        //max-width: 650px;\n    }\n    &__description{\n        color: #000;\n    }\n    /*scroll button*/\n    &__scroll-btn{\n        margin-top: 20px;\n        border-color: #002349;\n        border-width: 1px;\n        &:after{\n            background: #002349;\n        }\n    \n        &:hover{\n            background-color: #002349;\n            border-color: #002349;\n            &:after{\n                background: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Other Intro Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-98d32439",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix top margin below the image in Mobile View - WB */\n@media (max-width: 768px) {\n    div.content-wrapper__text {\n        margin-top: 40px;\n    }\n}\n/*END*/",
+    "action": "Fix magin top below agent image in mobile view",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-8d03b200",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "div.contact-details__cell .phone-wrapper {\n    color: #fff;\n}",
+    "action": "Fix phone color icon in contact details",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agents-list-visionary-90095e4c",
+    "element": "Agents List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix tag style and search button color- WB */\ndiv.agents-list-section .agents-list .agents-list__item .agents-list__item-tag {\n    border-color: #fff;\n    background-color: #fff;\n    color: #000;\n    &:hover{\n        color: #fff!important;\n        background-color: transparent;\n    }\n}\n\n\ndiv.agents-list-section .agents-list .agents-list__item:hover .agents-list__item-tag {\n    color: #000;\n}\n/*Fix Search button color */\ndiv.agents-list-section .lp-input-icon:after {\n    --iconColor: #000;\n}\n/*END*/\n\n.agents-list__last-name, .agents-list__first-name{\n    text-transform: uppercase;\n}",
+    "action": "Fix tag theme and search button color and uppercase names",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agents-list-visionary-cc8e96fe",
+    "element": "Agents List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media (max-width: 1024px) {\n    .agents-list-section .pagination-container {\n        margin-top: 2rem;\n    }\n}",
+    "action": "Fix space between cards and pagination",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agent-intro-visionary-c3a0f3b8",
+    "element": "Agent Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB Nicolas V*/\n.agent-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.agent-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.agent-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agent-bio-visionary-1850a0b1",
+    "element": "Agent Bio",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Center Social Icons in Mobile View - WB */\n@media (max-width: 768px){\n    ul.lp-socials{\n        justify-content: center;\n    }\n}\n/*END*/",
+    "action": "Center Social Icons in Mobile",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "agent-details-visionary-b975018c",
+    "element": "Agent Details",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Add color to phone icon -  WB */\n.agent-details__phone-wrapper{\n    color: #042D49;\n}\n/*END*/\n\nspan.agent-details__item:before {\n    background: none;\n}",
+    "action": "Add color to phone icon",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-slider-visionary-f8e813ac",
+    "element": "Testimonial Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Fix font-size, and reduce some margin and paddings - WB */\n.company-stats .company-stats__row {\n    padding-top: 0;\n}\n\ndiv.stats-list-title-group {\n    margin-bottom: 0px;\n}\n\n.lp-title-group{\n    max-width: 1260px;\n}\n\n.stats-list__title{\n    font-size: 40px;\n}\n/*END*/",
+    "action": "Arrow Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-slider-visionary-116b18f4",
+    "element": "Testimonial Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix header width and quotes theme by WB Nicolas V*/\n.testimonials-slider-heading{\n    max-width: 600px;\n}\n\n.link-icon--quotes:after{\n    color: #FFFFFF;\n}\n\n.testimonials-slider-heading__description{\n    opacity: 1;\n}\n/*END*/",
+    "action": "Fix title width, quotes color and description opacity",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "multi-status-property-slider-visionary-41adfea6",
+    "element": "Multi-Status Property Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".multi-status-property-slider__item-status{\n    background-color: #7C7A61;\n    color: #fff;\n    text-transform: uppercase;\n}\n.multi-status-property-slider__item-address{\n    text-transform: uppercase;\n}\n.multi-status-property-slider__pill{\n    border: 1px solid #7C7A61;\n    color: #7C7A61;\n    background-color: transparent;\n}\n\n.multi-status-property-slider__tabs-item{\n    text-transform: uppercase;\n}\n.multi-status-property-slider__tabs-item.active:after{\n    background-color: #7C7A61;\n}",
+    "action": "CSS",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-02dab621",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-2cbb3da3",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Card and label Theme by WB */\n.properties-slider-card__tag {\n    background-color: #003DA5;\n    color: #fff;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n}\n\n.properties-slider-card__feature{\n    background-color: #fff;\n    color: #DA1A2C;\n}\n/*END*/",
+    "action": "Fix Card & Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-list-visionary-de972940",
+    "element": "Properties List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Add color to search button  and fix input color - WB Nicolas V*/\ndiv.properties-list .properties-list__filters .lp-input-icon:after {\n    --iconColor: #333;\n}\n\n.properties-list__input-group{\n    .lp-input {\n        color: #000;\n    }\n}\n/*END*/",
+    "action": "Add color to search button",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-list-visionary-6c02a948",
+    "element": "Properties List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Add color to search button  and fix input color - WB Nicolas V*/\ndiv.properties-list .properties-list__filters .lp-input-icon:after {\n    --iconColor: #042D49;\n}\n.custom-select .custom-select-toggle:after {\n    background-color: #042D49;\n}\n.properties-list__input-group{\n    .lp-input {\n        color: #000;\n    }\n}\n/*END*/\ndiv.properties-list-range__range .noUi-horizontal .noUi-handle {\n    background-color: #042D49;\n    border: 5px solid #fff;\n    box-shadow: 0 0 0 1px #042D49;\n\n}\n.properties-list-item__address{\n    text-transform: uppercase;\n}\ndiv.properties-list-range__range .noUi-connects:before{\n    background-color: #042D49;\n    opacity: .8;\n}\n/*Add theme to tags - WB Nicolas V*/\ndiv.properties-list .properties-list-item__tag {\n    background-color: #042D49;\n    color: #fff;\n    letter-spacing: 1px;\n    text-transform: uppercase;\n}\n\ndiv.properties-list .properties-list-item__icons-row .properties-list-item__icon-tag {\n    background-color: #fff;\n    border: 1px solid #042D49;\n    color: #042D49;\n}\n/*END*/\n\n/*Fix tag in mobile view - WB Nicolas V*/\n@media (max-width: 767px){\n    div.properties-list .properties-list-item__tag {\n        white-space: pre;\n        font-size: 10px;\n    }\n}\n/*END*/\n/*START - pagination hover*/\n.paginationjs-prev a, .paginationjs-next a{\n    &:hover{\n        &:after{\n            background: #fff;\n        }\n    }\n}\n/*END*/\n/*Fix arrow in pagination - WB Nicolas V*/\ndiv.properties-list .paginationjs-next a:hover::after {\n    background-color: #fff ;\n}\n/*END*/",
+    "action": "Add theme to tags and fixed in mobile view",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-list-visionary-452a9dfb",
+    "element": "Properties List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix filter bar in mobile view - WB*/\n\n.properties-list__show-btn {\n    background-color: #245DA0;\n    border-color: #245DA0;\n    color: #fff;\n}\n.properties-list__hide-btn{\n    background-color: transparent;\n    border-color: #245DA0;\n    color: #245DA0;\n}\n.properties-list__show-btn:hover:not(:disabled) {\n    background-color: transparent;\n    border-color: #245DA0;\n    color: #245DA0;\n}\n\n.custom-select-content{\n    .custom-select-item:hover{\n        background-color: #245DA0;\n        color: #fff;\n    }\n}\n\n.properties-list__hide-btn{\n    border-color: #000;\n    &:hover{\n        background-color: #245DA0!important;\n        \n    }\n}\n/*END*/",
+    "action": "Fix filter bar in mobile view",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "property-intro-gallery-visionary-91613f17",
+    "element": "Property Intro Gallery",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows Theme - WB Nicolas V */\nbutton.lp-arrow{\n    border-color: #DA1A2C !important;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrow Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "property-intro-gallery-visionary-b8b1867a",
+    "element": "Property Intro Gallery",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".rich-lightbox__nav-link.active, .rich-lightbox__nav-link:hover {\n    background: #fff;\n    color: #245DA0;\n}\n\n.rich-lightbox__nav-link{\n    background: transparent;\n    color: #fff;\n    border-color: #fff;\n}\n\n.lp-btn:hover:not(:disabled) {\n    background: #fff;\n    color: #245DA0;\n}\n\n.rich-lightbox__close, .lp-lightbox__close{\n    border-color: #fff;\n}\n\n@media (hover: hover) and (pointer: fine) {\n    .lp-lightbox__close:hover:not(:disabled) {\n        background-color: #fff;\n        border-color: #fff;\n        color: #245DA0;\n    }\n    .lp-lightbox__close:hover:not(:disabled):after{\n        color: #245DA0;\n    }\n}\n\n.lp-lightbox__content{\n/* Arrows - WB */\n    button.lp-lightbox-arrow{\n        border-color: #fff !important;\n        background-color: #fff!important;\n        &:before{\n            border-color: #245DA0;\n        }\n        &:hover {\n            background-color: transparent!important;\n            &:before{\n                border-color: #fff;\n            }\n        }\n    }\n    @media(max-width: 767px){\n        button.lp-arrow{\n            border-color: #fff;\n            color: #245DA0;\n        background-color: #fff;\n            &:hover {\n                background-color: transparent;\n                color: #fff;\n            }\n        }\n    }\n    /*END*/\n}",
+    "action": "View All Content",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "property-map-visionary-fad22609",
+    "element": "Property Map",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - neighborhood map pin*/\n.map-marker svg{\n    fill: #000;\n    rect{\n        fill: #000;\n        --markerLine: #fff;\n    }\n    path{\n        stroke: #fff;\n    }\n}\n/*END*/\n\ndiv.property-map__name{\n    text-transform: uppercase;\n}\n\n&{\n    padding-bottom: 96px;\n}",
+    "action": "Circle, padding and title",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "property-details-tab-visionary-34414958",
+    "element": "Property Details Tab",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Code for Schedule A Showing Section - WB*/\n.property-details-tabs-accordion__icon  {\n    background-color: #fff;\n    color: #000;\n}\n\n.lp-a a:hover{\n    text-decoration-color: #fff;\n}\n.lp-a a:focus{\n    text-decoration-color: #fff;\n}\n.lp-a a:active {\n    color:#fff;\n}\n.property-details-tabs-schedule-modal__close{\n    border-color: #fff;\n    color: #000!important;\n    background-color: #fff!important;\n    &:hover{\n        border-color: #fff!important;\n        color: #fff!important;\n        background-color: transparent!important;\n    }\n}\n\n.property-details-tabs-schedule .schedule__calendar {\n    .lp-arrow{\n        border-color: #000;\n    }\n    .lp-arrow--prev:after{\n        background: #000;\n    }\n    .lp-arrow--next:after{\n        background: #000;\n    }\n    .lp-arrow:hover{\n        border-color: #000;\n        background: #000;\n    }\n    .lp-arrow--prev:hover:after{\n        background: #fff;\n    }\n    .lp-arrow--next:hover:after{\n        background: #fff;\n    }\n}\n\n.calendar__splide-track{\n    .calendar__item{\n        border-color: #000;  \n        color: #000;\n        .calendar__day{\n            color: #000;\n        }\n        &:hover{\n            background-color: #C1C5C9;\n            color: #000;\n        }\n    }\n    .selected .calendar__item{\n        border-color: #000;\n        background-color: #000;\n        color: #fff;\n        .calendar__day{\n            color: #fff;\n        }\n    }\n}\n\n.lp-input-icon:after{\n    --iconColor: #000;\n}\n\n.custom-select .custom-select-toggle:after {\n    background-color: #000;\n}\n\n.custom-select-content .custom-select-item {\n    background: #fff;\n    color: #000;   \n}\n.custom-select-content .custom-select-item:hover {\n    background: #000;\n    color: #fff;\n}\n@media (max-width: 560px) {\n    .property-details-tabs-schedule-modal__close {\n        right: 16px;\n        top: 20px;\n}\n@media (max-width: 560px) {\n    .property-details-tabs-schedule-modal__title-group {\n        padding-top: 30px;\n    }\n}\n}\n/*END*/",
+    "action": "Schedule A Showing section, arrows, dropdown, etc",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "virtual-tour-visionary-afaa5d2f",
+    "element": "Virtual Tour",
+    "template": "Visionary",
+    "selector": null,
+    "css": "div.virtual-tour__button {\n    background-color: var(--dark)!important;\n    &:hover {\n        background-color: var(--dark)!important;\n    }\n    span{\n        font-weight: 400!important;\n        letter-spacing: 1px;\n        max-width: 100%;\n    }   \n}",
+    "action": "",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "mortgage-calculator-visionary-76fdcb9d",
+    "element": "Mortgage Calculator",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Mortgage Calculator when the BG is white Update prices & list text color by WB Nicolas V*/\n.mortgage-calculator__container {\n     .calc__row input{\n        color: #000!important;\n    }\n     .calc__row button.custom-select-toggle  {\n        color: #000!important;\n    }\n     .custom-select-toggle:after {\n        background-color: #DA1A2C;    \n    }\n    .custom-select-content .custom-select-item {\n        background: #fff;\n        color: #000;   \n    }\n\n    .custom-select-content .custom-select-item:hover {\n        background: #DA1A2C;\n        color: #fff;  \n    }\n    .lp-link--light:after{\n        background-color: #000;\n    }\n    .lp-input{\n        border-color: #000;\n    }\n}\n\n.legend__item:hover{\n    .legend__name, .legend__val{\n        opacity:.8!important;\n    }\n}\n\n/*Center title & Description by WB Nicolas V*/\n@media (max-width: 768px){\n    .mortgage-calculator__col{\n        h2, .mortgage-calculator__description{\n            text-align: center;\n        }\n    }\n}\n/* END */\n\n/*Fix Mortgage Calculator arrow in mobile by WB Nicolas V*/\n@media (max-width: 768px){\n    .mortgage-results__expand {\n        background-color: #DA1A2C;\n        svg{\n            stroke: #fff;\n        }\n    }\n}\n/*END*/\n\n.mortgage-share__label{\n    text-transform: uppercase;\n}",
+    "action": "Fix theme with White BG",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-02dab621",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #DA1A2C;\n    &:after{\n        background: #DA1A2C;\n    }\n    &:hover {\n        background-color: #DA1A2C!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #DA1A2C;\n        color: #DA1A2C;\n        &:hover {\n            background-color: #DA1A2C;\n            color: #fff;\n        }\n    }\n}\n/*END*/",
+    "action": "Arrows Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "properties-slider-visionary-2cbb3da3",
+    "element": "Properties Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Card and label Theme by WB */\n.properties-slider-card__tag {\n    background-color: #003DA5;\n    color: #fff;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n}\n\n.properties-slider-card__feature{\n    background-color: #fff;\n    color: #DA1A2C;\n}\n/*END*/",
+    "action": "Fix Card & Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "home-valuation-visionary-59cce37f",
+    "element": "Home Valuation",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Steps theme by WB */\ndiv.home-valuation .home-valuation-form .home-valuation-tabs .home-valuation__tab--active {\n    background-color: #DA1A2C!important;\n    border-color: #DA1A2C;\n    color: #fff!important;\n}\n\ndiv.home-valuation .home-valuation-form .home-valuation-tabs .home-valuation-tabs__item {\n    border-color: #DA1A2C;\n    background-color: transparent;\n    color: #DA1A2C;\n}\n/*END*/",
+    "action": "Steps Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "home-valuation-visionary-0a6a2515",
+    "element": "Home Valuation",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix Icon color, drowdown color and disclaimer color - WB */\ndiv.home-valuation .home-valuation-form .lp-input-icon:after {\n    --iconColor: #003DA5;\n}\n\ndiv.custom-select .custom-select-content .custom-select-item:hover{\n    color: #fff;\n    background-color: #DA1A2C;\n}\n\ndiv.home-valuation .lp-disclaimer {\n    color: #000;\n}\n/*END*/",
+    "action": "Fix Icon color, drowdown color and disclaimer color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "instant-home-valuation-visionary-84f1be59",
+    "element": "Instant Home Valuation",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".instant-home-valuation-search {\n    background-color: transparent;\n    column-gap: 20px;\n    \n    path {\n    fill: #fff;\n    }\n    \n    .instant-home-valuation-search__input {\n    background-color: transparent;\n    color: #fff!important;\n    border: 1px solid #fff;\n    border-radius: 45px;\n    min-height: 54px;\n    }\n    \n    .instant-home-valuation-search__link{\n        color: #000;\n        \n        &:hover{\n        color: #1a1a1a;\n        }\n    }\n}\n\n.lp-h2 {\n    text-align: center;\n}\n\n.instant-home-valuation-benefits {\n    justify-content: center;\n}\n\n.lp-link:hover {\n    color: #000;\n}\n\n.lp-input {\n    color: #000;\n}",
+    "action": "Code CSS",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "text-grid-visionary-0884e8c4",
+    "element": "Text Grid",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - Style text grid scene title with responsive sizing and centering*/\n.text-grid-scenes__scene-title {\n    max-width: 65%;\n    margin-left: auto;\n    margin-right: auto;\n    font-size: 32px !important;\n    text-align: center;\n    /* !NOTE: change the media queries accordingly with the max-width for the title */\n    @media (max-width: 1920px) {\n        max-width: 85%;\n        width: 100% !important;\n        text-align: center;\n    }\n    @media (max-width: 1560px) {\n        margin: initial 0;\n        max-width: unset;\n        font-size: 28px !important;\n    }\n    @media (max-width: 1400px) {\n        margin: initial 0;\n        max-width: unset;\n        font-size: 26px !important;\n    }\n    @media (max-width: 1367px) {\n        max-width: unset;\n        font-size: 21px !important;\n    }\n}\n/*END*/",
+    "action": "Fix font size",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "text-grid-visionary-9139a52c",
+    "element": "Text Grid",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Text grid mobile view fix*/\ndiv.text-grid-scenes__scene-item--with-border .text-grid-scenes__scene-border {\n    border: 2px solid #fff;\n    opacity: 1;\n}\n.text-grid-scenes li{\n    margin: 0 8px;\n    flex-basis: 30.5%!important;\n    @media only screen and (max-width: 768px) {\n        margin: 8px 0;\n    flex-basis: unset !important;\n    }\n}\n/*END - Text grid mobile view fix*/\n\ndiv.text-grid {\n    padding-top: 0px;\n    padding-bottom: 0px;\n}",
+    "action": "Fix borders and color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "simple-cta-visionary-e77d5bee",
+    "element": "Simple CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix don't single words on the last line by WB */\n@media (max-width: 768px){\n    .simple-cta__text-block {\n        max-width: 80%;\n    }\n}\n/*END*/\n\n.simple-cta__text-block {\n    max-width: 95%;\n}\n\nh2.simple-cta__title p{\n    margin-bottom: 0px;\n}",
+    "action": "Fix Width and remove margin bottom from tittle",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "timeline-visionary-3e74932e",
+    "element": "Timeline",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Add style to hyperlink and fix it in mobile view - WB */\n.timeline .timeline__cell p a{\n    position: relative;\n    color: #000;\n    &:before {\n        content: '';\n        position: absolute;\n        left: 0;\n        bottom: 0;\n        width: 100%;\n        height: 1px;\n        background: grey!important;\n        -webkit-transition: .3s linear;\n        -webkit-transition: .3s linear;\n        transition: .3s linear;\n    }\n    &:after {\n        content: '';\n        position: absolute;\n        left: 0;\n        bottom: 0;\n        width: 0%;\n        height: 1px;\n        background: #003DA5!important;\n        -webkit-transition: .3s linear;\n        -webkit-transition: .3s linear;\n        transition: .3s linear;\n    }\n    &:hover{\n        &:after{\n            width: 100%;\n        }\n        color: #003DA5;\n    }\n}\n\n@media only screen and (max-width: 768px){\n    a{\n        white-space: pre-line !important;\n        text-decoration: underline !important;\n        text-underline-offset: 5px;\n        &:before{\n            display: none;\n        }\n    }\n}\n/*END*/",
+    "action": "Add hyperlink style and fix it in mobile view",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-75d961d9",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix arrow in pagination - WB Nicolas V*/\ndiv.paginationjs-pages .paginationjs-next a:hover::after {\n    background: #D4AF37!important;\n}\ndiv.paginationjs-pages .paginationjs-prev a:hover::after {\n    background: #D4AF37!important;\n}\n/*END*/",
+    "action": "Fix Grid Pagination",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-fdfedbb8",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.neighborhood-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.neighborhood-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.neighborhood-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "mls-properties-grid-with-filters-visionary-53ef21d2",
+    "element": "MLS Properties Grid with Filters",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START custom property listings - WB */\ndiv.properties-grid{\n    /**filters**/\n    .filters{\n        .lp-input{\n            background-color: #f3f3f3;\n            padding:20px 40px 20px 55px;\n            border:none;\n            color: #000;\n        }\n        \n        .lp-input-group--search::before{\n            left:25px;\n        }\n        \n        .filters__toggle{\n            @media(max-width:767px){\n                padding-left:25px;\n            }\n            \n        }\n        \n        .custom-select-toggle{\n            background-color: #f3f3f3;\n            border:none;\n            padding:15px 30px;\n            \n            &:after{\n                right:25px;\n            }\n        }\n        \n        .custom-select.open .custom-select-menu{\n            max-height:unset;\n            padding:5px 20px ;\n            border-radius:25px;\n            border: 1px solid var(--lp-color-secondary-gray-700);\n        }\n        \n        div.lp-input-group--search .lp-input-reset {\n            right: 15px;\n        }\n        \n        /*Start Uppercase Placeholder Input*/\n        .lp-input::placeholder {\n                text-transform: uppercase;\n            }\n            \n            .custom-select-toggle {\n                text-transform: uppercase!important;\n            }\n        \n        /**dropdown**/\n        .custom-select-item{\n            text-transform: uppercase;\n            &:hover{\n                background-color: #fff!important;\n                color: #DA1A2C!important;\n            }\n        }\n        \n        /**slider**/\n        .irs-line{\n            background-color: #000!important;\n        }\n        .irs-bar{\n            background-color: #000!important;\n        }\n        \n        .irs-handle{\n            background-color: #fff!important;\n            transition: all 0.3s;\n            border-color: #000!important;\n            i{\n                background-color: #000!important;\n            }\n            \n            &:hover{\n                border-color: #DA1A2C!important;\n                background-color: #DA1A2C!important;\n                \n                i{\n                    background-color: #fff!important;\n                }\n            }\n        }\n    }\n    \n    /**property cards**/\n    .properties-grid__item{\n        /**label**/\n        .listing-card__label,\n        .listing-card__mls-key{\n            background-color: #003CA4!important;\n            color: #fff!important;\n            text-transform: uppercase;\n            font-weight: 500!important;\n        }\n        \n        /**info**/\n        .listing-card__info{\n            box-shadow: none!important;\n            color: #000;\n            background-color: #EEEDE9!important;\n            text-transform: uppercase;\n        }\n    }\n}\n/**END custom property listings*/",
+    "action": "Fix Property Theme Cards, dropdown, slider, buttons, etc",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "mls-properties-grid-with-map-visionary-78845232",
+    "element": "MLS Properties Grid with Map",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix dropdown and filter properties - WB Nicolas V*/\n.mls-properties-with-map__container{\n    .mls-properties-with-map-filters__grid-switcher-tab{\n        color: #000;\n        &:hover{\n            color: #000;\n        }\n    }\n    .mls-properties-with-map-filters__grid-item .custom-select-item:hover{\n        background-color: #000;\n        color: #fff;\n    }\n    .mls-properties-with-map__grid-container{\n        .mls-properties-with-map-card__info{\n        }\n    }\n}\n/*END*/\n\nh2.mls-properties-with-map__title{\n    text-transform: uppercase;\n}",
+    "action": "",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "mls-properties-grid-with-map-visionary-fb961a78",
+    "element": "MLS Properties Grid with Map",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".mls-properties-with-map__title-group {\n    margin-bottom: 32px;\n}\n\n.mls-properties-with-map__filters {\n    margin-bottom: 0px;\n}\n\nh2.mls-properties-with-map__title{\n    text-transform: uppercase;\n}\n\n.mls-properties-with-map-filters__grid-switcher-tab:hover {\n    color: #000;\n}\n\n.custom-select-toggle:after {\n    background: transparent;\n}\n\n/* START - Theme the mls properties modal buttons */\n.mls-properties-with-map-modal__reset-button,\n.mls-properties-with-map-modal__close-modal {\n    border-color: #88969F;\n    background: transparent;\n    color: #88969F;\n\n    &:hover:not(:disabled) {\n        background: #88969F;\n        border-color: #88969F;\n        color: #FFF;\n    }\n}\n\n/* END */\n\n.mls-properties-with-map__footer {\n    padding-bottom: 0px;\n}\n\n/* START - Fix search input inconsistent dimensions */\n.mls-properties-with-map__input {\n    background: rgba(0, 0, 0, 0.05);\n    border: 1px solid rgba(0, 0, 0, 0.0);\n    padding-left: 54px;\n}\n\n.mls-properties-with-map__input-reset {\n    right: 18px;\n}\n\n.mls-properties-with-map__input-group--search:before {\n    left: 18px;\n}\n\n/* END */\n\n/* START - Uppercase property address */\n.mls-properties-with-map-card__address {\n    text-transform: uppercase;\n}\n\n/* END */\n\n/* START - Fix theme input boxes globally */\n/* Note 2: This can also be inserted per element or per media queries */\n.lp-input,\n.lp-input:not(:placeholder-shown),\n.lp-input:hover,\n.lp-input:focus {\n    background: rgba(0, 0, 0, 0.1);\n    color: #000;\n    border: 1px solid transparent;\n\n    &::placeholder {\n        color: rgba(0, 0, 0, 0.5);\n    }\n}\n\n.lp-input-icon:after {\n    --iconColor: #FFF;\n}\n\n.lp-combo-input__wrapper:last-child:before {\n    --lp-color-primary-accent: rgba(255, 255, 255, 0.2);\n}\n\n/* END */\n\n/* START - Theme dropdown menu toggle */\n.custom-select {\n    .custom-select-toggle {\n        &:is(.is-placeholder) {\n            color: rgba(0, 0, 0, 0.5);\n        }\n\n        &:not(:placeholder-shown) {\n            color: #000;\n            border-color: rgba(0, 0, 0, 0.1);\n            background: rgba(0, 0, 0, 0.05);\n        }\n    }\n}\n\n/* END */\n\n/* START - Theme dropdown menu option box */\n.custom-select-menu {\n    &::-webkit-scrollbar-track {\n        background: #88969F !important;\n    }\n\n    &::-webkit-scrollbar-thumb {\n        background: #999 !important;\n    }\n\n    &::-webkit-scrollbar-thumb:hover {\n        background: #000 !important;\n    }\n}\n\n.custom-select-menu {\n    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.025);\n\n    &:is(.open) {\n        --lp-color-secondary-gray-700: rgba(0, 0, 0, 0.1);\n    }\n\n    &:not(.open) {\n        opacity: 0;\n    }\n\n    .custom-select-content {\n        background: #FFF;\n        color: #000;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n}\n\n/* END */\n\n/* START - Theme dropdown menu option when hovered, clicked, and selected */\n.custom-select {\n    .custom-select-item {\n\n        &:hover,\n        &:focus,\n        &:active {\n            color: #fff;\n            background: #88969F;\n        }\n\n        &:is(.is-selected) {\n            /* Specific variable selector for selected dropdown item */\n            --lp-color-primary-accent: #000;\n        }\n    }\n}\n/* END */\n\n.js-reset-filters{\n    color: #88969F!important;\n    background-color: rgba(0, 0, 0, 0)!important;\n    border-color: #88969F!important;\n    &:hover{\n        color: rgba(255, 255, 255, 1)!important;\n        background-color: #88969F!important;\n        border-color: #88969F!important;\n    }\n}",
+    "action": "Other Code, more complete",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "mls-properties-grid-with-map-visionary-56bfd282",
+    "element": "MLS Properties Grid with Map",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".mls-properties-with-map__title-group {\n    margin-bottom: 32px;\n}\n\n.mls-properties-with-map__filters {\n    margin-bottom: 0px;\n}\n\nh2.mls-properties-with-map__title{\n    text-transform: uppercase;\n}\n\n.mls-properties-with-map-filters__grid-switcher-tab:hover {\n    color: #000;\n}\n\n.custom-select-toggle:after {\n    background: transparent;\n}\n\n/* START - Theme the mls properties modal buttons */\n.mls-properties-with-map-modal__reset-button,\n.mls-properties-with-map-modal__close-modal {\n    border-color: #000;\n    background: transparent;\n    color: #000;\n\n    &:hover:not(:disabled) {\n        background: #000;\n        border-color: #000;\n        color: #fff;\n    }\n}\n.mls-properties-with-map-modal__items{\n    color: #000;\n}\n\n/* END */\n\n.mls-properties-with-map__footer {\n    padding-bottom: 0px;\n}\n\n/* START - Fix search input inconsistent dimensions */\n.mls-properties-with-map__input {\n    background: rgba(255, 255, 255, 1);\n    border: 1px solid rgba(255, 255, 255, 1);\n    padding-left: 54px;\n}\n\n.mls-properties-with-map__input-reset {\n    right: 18px;\n}\n\n.mls-properties-with-map__input-group--search:before {\n    left: 18px;\n}\n\n.mls-properties-with-map-filters__grid-price-range-popup{\n    color: #000;\n}\n\n.mls-properties-with-map-modal__checkbox-container{\n    color: #000;\n}\n\n/* END */\n\n/* START - Uppercase property address */\n.mls-properties-with-map-card__address {\n    text-transform: uppercase;\n}\n\n/* END */\n\n/* START - Fix theme input boxes globally */\n/* Note 2: This can also be inserted per element or per media queries */\n.lp-input,\n.lp-input:hover,\n.lp-input:focus {\n    background: rgba(255, 255, 255, 1)!important;\n    color: #000!important;\n    border: 1px solid #fff!important;\n\n    &::placeholder {\n        color:  rgba(0, 0, 0, 1);\n    }\n}\n\n.lp-input-icon:after {\n    --iconColor: #000;\n}\n\n.lp-combo-input__wrapper:last-child:before {\n    --lp-color-primary-accent: rgba(255, 255, 255, 0.2);\n}\n\n/* END */\n\n/* START - Theme dropdown menu toggle */\n.custom-select {\n    .custom-select-toggle {\n        &:is(.is-placeholder) {\n            color:  rgba(255, 255, 255, 1);;\n        }\n\n        &:not(:placeholder-shown) {\n            color: #000;\n            border-color:  rgba(0, 0, 0, 1);\n            background: rgba(255, 255, 255, 1);\n        }\n    }\n}\n\n/* END */\n\n/* START - Theme dropdown menu option box */\n.custom-select-menu {\n    &::-webkit-scrollbar-track {\n        background: #88969F !important;\n    }\n\n    &::-webkit-scrollbar-thumb {\n        background: #999 !important;\n    }\n\n    &::-webkit-scrollbar-thumb:hover {\n        background: #000 !important;\n    }\n}\n\n.custom-select-menu {\n    box-shadow: 0px 8px 16px  rgba(255, 255, 255, 1);\n\n    &:is(.open) {\n        --lp-color-secondary-gray-700: rgba(0, 0, 0, 0.1);\n    }\n\n    &:not(.open) {\n        opacity: 0;\n    }\n\n    .custom-select-content {\n        background: #FFF;\n        color: #000;\n\n        &::-webkit-scrollbar {\n            display: none;\n        }\n    }\n}\n\n/* END */\n\n/* START - Theme dropdown menu option when hovered, clicked, and selected */\n.custom-select {\n    .custom-select-item {\n\n        &:hover,\n        &:focus,\n        &:active {\n            color: #fff;\n            background: #000;\n        }\n\n        &:is(.is-selected) {\n            /* Specific variable selector for selected dropdown item */\n            --lp-color-primary-accent: #000;\n        }\n    }\n}\n/* END */\n\n.js-reset-filters{\n    color: #000!important;\n    background-color: rgba(0, 0, 0, 0)!important;\n    border-color: #000!important;\n    &:hover{\n        color: rgba(255, 255, 255, 1)!important;\n        background-color: #000!important;\n        border-color: #000!important;\n    }\n}",
+    "action": "Black BG",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-overview-visionary-1d380dac",
+    "element": "Neighborhoods Overview",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - Overview Theme by WB */\nspan.neighborhood-overview-grid__pop-up{\n    background-color: #DA1A2C;\n    color: #fff;\n}\n\nspan.neighborhood-overview-grid__hint::after {\n    background-color: #DA1A2C;\n}\n\nspan.neighborhood-overview-grid__pop-up::after{\n    background-color: #DA1A2C;\n}\n\nh2.neighborhood-overview__title {\n    max-width: 95%;\n}\n\np.neighborhood-overview__description{\n    max-width: 100%;\n}\n\n.neighborhood-overview-grid__popup-title{\n    text-transform: uppercase;\n}\n/*END - Overview Theme by WB Nicolas V*/",
+    "action": "Overview Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-poi-visionary-acaae719",
+    "element": "Neighborhoods POI",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - POI Theme by WB */\n\n@media (max-width: 767px){\n.poi-table__filters {\n    flex-direction: column;\n}\n.poi-table__filters button {\n    text-align: left;\n}\n}\n\ndiv.neighborhood-poi__title {\n    max-width: 100%;\n}\n\n.neighborhood-score__help svg{\n    &:hover{\n        cursor: pointer;\n    }\n    path{\n        fill: #D0472B;\n    }\n}\n\n\ndiv.neighborhood-score__chart::after {\n    background-image: conic-gradient(#D0472B var(--percentage), #ccc var(--percentage))!important;\n}\n\n\nspan.neighborhood-poi-table__tag{\n    background: #D0472B;\n    color: #fff;\n    text-transform: uppercase;\n}\n\n.neighborhood-score__help .tippy-content{\n    background: #D0472B!important;\n}\n\n.neighborhood-score__help .tippy-content span{ \n    text-transform: uppercase;\n}\n\n.score__title{\n    text-transform: uppercase;\n}\n\n\n/*start - pop up link */\n.neighborhood-score__help .neighborhood-score__help-content{\n    .lp-link{\n        text-transform: uppercase;\n        color: #f1f1f1;\n        text-decoration: underline;\n    }\n    .lp-link:hover{\n        color: #fff;\n    }\n    .lp-link:before{\n        background-color: #999;\n    }\n    .lp-link:after{\n        background-color: #fff;\n    }\n}\n/*end*/\n.neighborhood-score__help .tippy-arrow {\n    color: #D0472B!important;\n}\n\n.neighborhood-poi-table__stars .is-filled {\n    background-color: #D0472B!important;\n}\n\n@media (max-width: 568px){\n    .poi-table__load-more .btn {\n        width: 100%;\n    }\n}\na.neighborhood-poi-table__card-link{\n    &:hover{\n        color: #D0472B;\n    }\n}\n\ndiv.neighborhood-poi-table__filters button {\n    background: #D0472B;\n    border: 1px solid #D0472B;\n    color: #fff;\n    &:hover{\n        background: transparent;\n        border: 1px solid #D0472B;\n        color: #D0472B;\n    }\n}\n\ndiv.neighborhood-poi-table__filters button[data-active=true] {\n    background: #C2AFDA;\n    border: 1px solid #C2AFDA;\n    color: #fff;\n}\n\n/*END - POI Theme by WB Nicolas V*/",
+    "action": "POI Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-demographics-employment-visionary-58ff61e8",
+    "element": "Neighborhoods Demographics & Employment",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START - Demographics Theme by WB */\n\n@media screen and (max-width: 768px) {\n    div.nav-tab {\n        flex-direction: column;\n    }\ndiv.description p{\nmax-width: 100%;\n}\n}\n.title {\n    max-width: 100%!important;\n}\n\n@media (max-width: 560px){\n    p.chart-binary__label {\n        white-space: normal;\n    }\n}\n\np.neighborhood-demographics-tabs__overview-name--hint::after{\n    background-color: #D0472B;\n}\n\np.neighborhood-demographics-tabs__overview-hint{\n    background-color: #D0472B;\n    color: #fff;\n}\n\np.neighborhood-demographics-tabs__overview-hint::after {\n    background-color: #D0472B;\n}\n\nh2.neighborhood-demographics__title {\n    max-width: 95%!important;\n}\n\nspan.neighborhood-demographics-tabs__overview-hint-title {\n    text-transform: uppercase;\n    font-weight: 700;\n}\n\ndiv.neighborhood-demographics-description{\n    max-width: 100%;\n}\n\nspan.neighborhood-demographics-nav__tab {\n    background: #D0472B;\n    border: 1px solid #D0472B;\n    color: #fff;\n    &:hover{\n        background: transparent;\n        border: 1px solid #D0472B;\n        color: #D0472B;\n    }\n}\n\nspan.neighborhood-demographics-nav__tab--active {\n    background: transparent!important;\n    border: 1px solid #D0472B;\n    color: #D0472B;\n}\n\n\n/*END - Demographics Theme by WB Nicolas V*/",
+    "action": "Demographics Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-schools-visionary-efd7d10e",
+    "element": "Neighborhoods Schools",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Shools Theme by WB */\n/*change stars rating color - WB Nicolas V*/\ndiv.neighborhood-schools-rating::before {\n    background: linear-gradient(90deg, #DA1A2C var(--percent), #ccc var(--percent)) !important;\n    background-clip: text !important;\n    text-fill-color: transparent !important;\n}\n/*change stars rating color*/\n\nh2.title {\n    max-width: 100%;\n}\n\n@media screen and (max-width: 768px) {\n    div.type-list{\n        flex-direction: column;\n    }\n}\n\n.neighborhood-schools-nav__item {\n    background: transparent;\n    border: 1px solid #DA1A2C;\n    color: #DA1A2C;\n    &:hover{\n        background: #DA1A2C;\n        border: 1px solid #DA1A2C;\n        color: #fff;\n    }\n}\n\n.neighborhood-schools-nav__item.neighborhood-schools-nav__item--active{\n    background: #DA1A2C!important;\n    border: 1px solid #DA1A2C!important;\n    color: #fff!important;\n}\n\n\nh2.neighborhood-schools__title {\n    max-width: 100%;\n}\n\ndiv.neighborhood-schools-table__category{\n    background: #003DA5;\n    color: #fff;\n}\n\n\ndiv.lp-vertical-paddings {\n    padding-top: 96px;\n    padding-bottom: 96px;\n    @media(max-width: 768px){\n    padding-top: 64px;\n    padding-bottom: 64px;\n    }\n}\n\n\n/*Start - School Links - Producer - by WB Nicolas V*/\na.neighborhood-schools-table__description{\n    position: relative;\n    color: #000;\n    font-weight: 400;\n    &:before {\n        content: '';\n        position: absolute;\n        left: 0;\n        bottom: 0;\n        width: 100%;\n        height: 1px;\n        background: #ccc!important;\n        -webkit-transition: .3s linear;\n        -webkit-transition: .3s linear;\n        transition: .3s linear;\n    }\n    &:after {\n        content: '';\n        position: absolute;\n        left: 0;\n        bottom: 0;\n        width: 0%;\n        height: 1px;\n        background: #003DA5!important;\n        -webkit-transition: .3s linear;\n        -webkit-transition: .3s linear;\n        transition: .3s linear;\n    }\n    &:hover{\n        &:after{\n            width: 100%;\n        }\n        color: #003DA5;\n    }\n}\n\n\n/*END - Shools Theme by WB Nicolas V*/",
+    "action": "Schoold Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-gallery-visionary-1aa3261b",
+    "element": "Neighborhoods Gallery",
+    "template": "Visionary",
+    "selector": null,
+    "css": "& {\n    background-color: #FFF !important;\n}\n\n.splide__track{\n    background-color: #FFF !important;\n}\n.neighborhood-gallery{\n    margin-top:0px !important;\n    margin-bottom:64px!important;\n    padding-top:0px!important;\n    padding-bottom: 96px!important;\n    @media only screen and (max-width:680px){\n        margin-top:0px!important;\n        margin-bottom:64px!important;\n        padding-bottom: 46px!important;\n    }\n    @media only screen and (min-width:1200px){\n        margin-top:0px!important;\n        margin-bottom:96px!important;\n    }\n}\n\n/*Fix space for arrows in both views - WB Nicolas V*/\n.neighborhood-gallery__control-wrapper {\n    bottom: 96px;\n    @media(max-width: 568px){\n        bottom: 46px;\n    }\n}\n/*END*/",
+    "action": "Fix space for arrows in both views and add padding bottom",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhoods-gallery-visionary-3d670642",
+    "element": "Neighborhoods Gallery",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".splide__list {\n    justify-content: center !important;\n}\nmargin-bottom: 96px !important;",
+    "action": "Center imatge and add margin bottom",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "neighborhood-map-visionary-5cafde71",
+    "element": "Neighborhood Map",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".map-marker svg rect{\n    fill:#000;\n    stroke:#fff;\n}\n\nsvg path {\n    stroke: #fff;\n}\n\n.neighborhood-map__name{\n    text-transform: uppercase;\n}\n\n&{\n    padding-bottom: 96px;\n}",
+    "action": "Fix Circle in Map Button",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "testimonial-list-visionary-c3f95a85",
+    "element": "Testimonial List",
+    "template": "Visionary",
+    "selector": null,
+    "css": "Testimonial Theme, color for bottom line, quote and pagination arrows when on hover",
+    "action": "",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "standart-cta-visionary-1507f508",
+    "element": "Standart CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*START Width Adjustment and font size - WB */\n.standard-cta__container {\n    width: 70% !important;\n    @media (max-width: 768px){\n        width: 100% !important;\n    }\n}\n\n@media (min-width:1025px){\n    .standard-cta__title {\n        font-size: 38px;\n    }\n}\n/*END*/",
+    "action": "Fix Width and font size",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "standart-cta-visionary-64acf785",
+    "element": "Standart CTA",
+    "template": "Visionary",
+    "selector": null,
+    "css": "@media (max-width: 600px) {\n    .standard-cta-button-container__button:last-of-type {\n        text-align: center;\n    }\n}",
+    "action": "Center Title",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "blog-posts-list-visionary-91df6623",
+    "element": "Blog Posts List",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".blog-posts-list-item__title {\n    border-bottom: 1px solid #343995;\n    text-transform: uppercase;\n}\n\n.blog-posts-list-item__tag{\n    background-color: #343995;\n    color: #fff;\n    text-transform: uppercase;\n}\n\n.blog-posts-list__category-name{\n    text-transform: uppercase;\n}\n\n/*Fix arrow in pagination - WB Nicolas V*/\ndiv.paginationjs-pages .paginationjs-next a:hover::after {\n    background: #fff!important;\n}\ndiv.paginationjs-pages .paginationjs-prev a:hover::after {\n    background: #fff!important;\n}\n/*END*/",
+    "action": "Blog Content",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-24a4be2e",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.blog-post-intro__scroll-btn {\n    border-color:#fff;\n    background-color: #fff;\n    &:hover{\n        background-color: transparent;\n    }\n}\n\n.blog-post-intro__scroll-btn::after {\n    background-color: #D0472B;\n}\n\n.blog-post-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "blog-post-gallery-visionary-10c608e7",
+    "element": "Blog Post Gallery",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Gallery Details - WB Nicolas V*/\n.lp-lightbox.show{\n    .rich-lightbox__close, .lp-lightbox__close{\n        border-color: #fff;\n    }\n\n    @media (hover: hover) and (pointer: fine) {\n        .lp-lightbox__close:hover:not(:disabled) {\n            background-color: #fff;\n            border-color: #fff;\n            color: #000;\n        }\n        .lp-lightbox__close:hover:not(:disabled):after{\n            color: #000;\n        }\n    }\n\n    .lp-lightbox__content{\n        button.lp-lightbox-arrow{\n            border-color: #fff !important;\n            background-color: transparent!important;\n            &:before{\n                border-color: #fff;\n            }\n            &:hover {\n                background-color: #fff!important;\n                &:before{\n                    border-color: #000;\n                }\n            }\n        }\n        @media(max-width: 767px){\n            button.lp-arrow{\n                border-color: #fff;\n                color: #fff;\n                background-color: transparent;\n                &:hover {\n                    background-color: #fff;\n                    color: #000;\n                }\n            }\n        }\n    }\n}\n/*END*/\n\n/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #fff;\n    &:after{\n        background: #fff;\n    }\n    &:hover {\n        background-color: #fff!important;\n        &:after{\n            background: #000;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #fff;\n        color: #fff;\n        &:hover {\n            background-color: #fff;\n            color: #000;\n        }\n    }\n}\n/*END*/\n\n.blog-post-gallery__control-wrapper button{\n    color: #fff;\n    background-color: transparent;\n    border-color: #fff;\n    &:hover{\n        color: #000!important;\n        background-color: #fff!important;\n        border-color: #fff;\n    }\n}",
+    "action": "Arrows, Buttons and View All details style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-a4c3d1ec",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": ".video-gallery-card__btn-play:after {\n    background: #fff;\n}\n\n.paginationjs-pages ul li.paginationjs-next a:hover:after{\n    color: #ECD00C!important;\n}\n\n.paginationjs-pages ul li.paginationjs-prev a:hover:after{\n    color: #ECD00C!important;\n}\n/*END*/\n\n.video-gallery{\n    padding-bottom: 96px;\n    padding-top: 96px;\n    @media (max-width: 767px) {\n        padding-bottom: 64px;\n        padding-top: 64px;\n    } \n}",
+    "action": "Fix play button color, pagination and padding",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-ae123194",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Start - Button Theme - WB */\n.custom-intro__scroll-btn {\n    border-color:#DA1A2C;;\n    &:hover{\n        background-color: #DA1A2C;\n    }\n}\n\n.custom-intro__scroll-btn::after {\n    background-color: #DA1A2C;\n}\n\n.custom-intro__scroll-btn:hover::after {\n    background-color: #fff;\n}\n/*END*/",
+    "action": "Button Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-intro-visionary-845debf0",
+    "element": "Custom Intro",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/*Fix border color and input color - WB Nicolas V*/\n.contact-form__container{\n    border-color: #fff;\n}\n\n.contact-form__group-container {\n    .lp-input {\n        color: #000;\n    }\n}\n\n.contact-form__input-group {\n    .lp-input {\n        color: #000;\n    }\n}\n/*END*/",
+    "action": "Fix border color and input",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "custom-slider-visionary-b2ca8de1",
+    "element": "Custom Slider",
+    "template": "Visionary",
+    "selector": null,
+    "css": "/* Arrows - WB */\nbutton.lp-arrow{\n    border-color: #000;\n    background-color: transparent;\n    &:after{\n        background: #000;\n    }\n    &:hover {\n        background-color: #000!important;\n        &:after{\n            background: #fff;\n        }\n    }\n}\n@media(max-width: 767px){\n    button.lp-arrow{\n        border-color: #000;\n        color: #000;\n        &:hover {\n            background-color: #000;\n            color: #fff;\n        }\n    }\n}\n/*END*/\n@media (max-width: 620px) {\n    .custom-slider__text {\n        margin-right: 0px;\n        text-align: center;\n    }\n}\nh2{\n    color: #000;\n}\n.custom-slider__top-part{\n    margin-bottom: 0px;\n}\n\n.custom-slider__mobile-arrows{\n    width: 100%;\n    justify-content: center;\n}",
+    "action": "Custom Slider CSS Code",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  }
+]

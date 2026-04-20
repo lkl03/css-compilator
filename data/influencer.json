@@ -1,0 +1,422 @@
+[
+  {
+    "id": "header-nav-influencer-e2d8bc1d",
+    "element": "Header Nav",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - header nav link underline by WB */\nnav#global-navbar{\n    a.navigation__link {\n        text-transform: uppercase;\n        position: relative!important;\n        &:before, &:after{\n            transition: 0.4s;\n            text-decoration: none!important;\n            line-height: 1;\n            content: \"\"\"\";\n            height: 1px;\n            position: absolute!important;\n            bottom: 0;\n            left: 0;\n        }\n        &:before {\n            width: 100%!important;\n            background-color: #999!important;\n        }\n        &:after{\n            width: 0%!important;\n            background-color: #fff!important; \n        }\n        &:hover:after{\n            width: 100%!important;\n        }\n    }\n    header.scroll{\n        a.navigation__link {\n            &:before{\n               background-color: #ddd!important;\n            }\n            &:hover:after{\n               background-color: #2A505D!important; \n            }\n        }\n    }\n}\n/*END - header nav link underline */",
+    "action": "Nav Links Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-influencer-87f7dc1e",
+    "element": "Header Nav",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - change nav background color by WB  */\nnav#global-navbar header.header{\n    .navigation__item.sub-nav-container .sub-nav{\n    background-color:#fff;\n        ul li .nav-link{\n            text-transform: uppercase;\n            color:#000;\n            &:hover{\n                background-color:#000;\n                color: #fff;\n            }\n        }\n    }\n    div.header__container{\n       border-bottom: 2px solid rgba(255, 255, 255, 0.49); \n    }\n    &.scroll{\n        background-color:#000;\n        color: #fff;\n        button.hamburger{\n            &:before, &:after{\n                border-color: #fff;\n            }\n        }\n        div.header__container{\n           border-bottom: 2px solid #000; \n        }\n    }\n}\n/*END - change nav background color*/",
+    "action": "Nav Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-influencer-25bac16f",
+    "element": "Header Nav",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/* Header, Make dark logo appears on scroll - WB */\nnav#global-navbar header.header {\n    img.logo__img--light{\n        display: block!important;\n    }\n    img.logo__img--dark{\n        display: none!important;\n    }\n}\n/* END */",
+    "action": "Show Dark Logo in Nav",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "header-nav-influencer-0777670f",
+    "element": "Header Nav",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix header logo size in mobile view - WB  */\n@media (max-width: 578px) {\n    nav#global-navbar .logo img {\n        max-width: 230px;\n    }\n}\n/*END*/",
+    "action": "Header logo size in Mobile View",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-influencer-37631495",
+    "element": "Side Menu",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Change to uppercase sidemenu items by WB */\ndiv#global-sidemenu .sidemenu__nav {\n    li.sidemenu__item .sidemenu__grouped {\n        text-transform: uppercase;\n    }\n    li a{\n        text-transform: uppercase;\n    }\n}\n/*END*/",
+    "action": "Make items uppercase",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "side-menu-influencer-38ac1ffa",
+    "element": "Side Menu",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Center Social Icons in Footer, SideMenu & Contact Overlay - WB */\n@media (max-width: 678px) {\n    div#global-sidemenu .lp-socials {\n        justify-content: center!important;\n        li{\n            margin: 10px 10px 0 10px!important;\n        }\n    }\n    \n    footer#global-footer .lp-socials{\n        justify-content: center!important;\n        li{\n            margin: 10px 10px 0 10px!important;\n        }\n    }\n    div#modal-global-contact-us .lp-socials{\n        justify-content: center!important;\n        li{\n            margin: 10px 10px 0 10px!important;\n        }\n    }\n}\n/*END*/",
+    "action": "Center Social Icons in Footer, SidemMenu & Contact Overlay in Mobile View",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "contact-form-influencer-7e0bfa29",
+    "element": "Contact Form",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Contact form link underline - WB */\ndiv#modal-global-contact-us{\n    div.contact-popup__info a {\n        position: relative!important;\n        &:before, &:after{\n            transition: 0.4s;\n            text-decoration: none!important;\n            line-height: 1;\n            content: \"\"\"\";\n            height: 1px;\n            position: absolute!important;\n            bottom: 0;\n            left: 0;\n        }\n        &:before {\n            width: 100%!important;\n            background-color: #ddd!important;\n        }\n        &:after{\n            width: 0%!important;\n            background-color: #63666F!important; \n        }\n        &:hover{\n            color: #63666F!important;\n        }\n        &:hover:after{\n            width: 100%!important;\n        }\n    }\n}\n/*END - link underline*/",
+    "action": "Contact Form Links Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-influencer-f48b6af5",
+    "element": "Footer",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Footer - add line to hyperlink by WB  */\n.footer__disclaimer a,.footer__info-column a,.footer__copyright a,a.hyperlink-style-2,.footer__menu a{\n    position: relative;\n    display: inline-block;\n    vertical-align: top;\n    &:after, &:before{\n        content: \"\"\"\";\n        height: 1px;\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        box-sizing: border-box;\n        outline: none;\n        transition: 0.4s;\n    }\n    &:before{\n        background-color: #ccc;\n        width: 100%;\n    }\n    &:after{\n        width: 0%;\n        background-color: #FFFFFF;\n        transition: 0.4s;\n    }\n    &:hover{\n        text-decoration: none!important;\n        &:after{\n            width: 100%;\n        }\n    }\n}\nfooter#global-footer{\n    .footer__disclaimer{\n        opacity: 1;\n    }\n    .footer__copyright .link {\n        text-decoration: none;\n    }\n    .footer__menu-item {\n        text-transform: uppercase;\n    }\n}\n/*END - add line to hyperlink*/",
+    "action": "Footer Links Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "footer-influencer-a23c65c4",
+    "element": "Footer",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/* Header, Increase Logo size - WB */\nfooter#global-footer .footer__info-column {\n    .footer__logo{\n        max-height: 300px;\n        max-width: 400px;\n    }\n    margin-bottom: 0px;\n}\n/* END */",
+    "action": "Footer logo size in Mobile View",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "gsm-influencer-08625397",
+    "element": "GSM",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/* Gallery style menu theme - WB */\ndiv.gallery-component__col .gallery-card__title {\n  text-align: center;\n  font-size: 26px;\n  text-transform: none;\n  margin-top: auto;\n  margin-bottom: auto;\n  padding-bottom: 20px;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n\n/*GSM Ipad view - Producer - WB Nicolas V*/\n@media(min-width: 765px) and (max-width: 1025px) {\n    div.gallery-component__col .gallery-card__title {\n        font-size: 24px!important;\n    }\n}\n/*END*/\n\n\ndiv.gallery-component__col .gallery-card {\n  position: relative;\n  width: 100%;\n  padding-right: 20px;\n  padding-left: 20px;\n  height: 350px;\n  &::before {\n    background-image: linear-gradient(\n      to bottom,\n      rgba(0, 0, 0, 0),\n      rgba(0, 0, 0, 0.95)\n    ) !important;\n  }\n}\n\n@media (max-width: 768px) {\n  div.gallery-component__col .gallery-card {\n    position: relative;\n    width: 100%;\n    padding-right: 0px;\n    padding-left: 0px;\n    height: 310px;\n  }\n  div.row.gallery-component__row.cols-3 .gallery-component__col {\n    max-width: 100%;\n    flex-basis: 100%;\n    padding-right: 10px;\n    padding-left: 10px;\n  }\n}\n/*END - Gallery style menu*/\n\n/*START - fix gsm padding - WB Nicolas V */\ndiv.gallery-component {\n    padding-top:96px;\n    padding-bottom: 46px;\n    @media (max-width: 768px){\n        padding-bottom: 44px;\n        padding-top: 64px;\n    }\n}\n/*END*/",
+    "action": "GSM Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-testimonial-influencer-7e57c789",
+    "element": "Feat. Testimonial",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Testimonial Card Theme - WB */\ndiv.testimonial-card {\n    background-color: #fffbf;\n    color: #fff;\n}\n/* END */",
+    "action": "Card Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-testimonial-influencer-d209260f",
+    "element": "Feat. Testimonial",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB  */\ndiv.inf-slider-arrows{\n    .slick-prev, .slick-next{\n        background-color: #fff;\n        border-color: #fff;\n        margin-left: 5px;\n        &:hover{\n            background-color:#fff;\n            &:before{\n                color:#A7A9B4!important;\n                transition: 0.2s;\n            }\n        }\n        &:before{\n            color:#63666F!important;\n            transition: 0.2s;\n        }\n    }        \n}\n/*ENd - fix pagination color*/",
+    "action": "Pagination Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-39fd4e63",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Theme Label and bottom line - WB  */\nspan.property-card__label {\n    background-color: #D9DAE4;\n    color: #000;\n}\n\ndiv.block-strikethrough:before {\n    border-top: 1px solid #D9DAE4;\n    opacity: 1;\n}\n/* END */",
+    "action": "Fix Theme, Label and Bottom Line",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-09aee318",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix Top Padding - WB */\n.featured-properties {\n    padding-top: 88px!important;\n}\n/*END*/",
+    "action": "Fix Top Padding",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-c01ac8d4",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB */\ndiv.inf-slider-arrows{\n    .slick-prev, .slick-next{\n        background-color: #63666F;\n        border-color: #63666F;\n        margin-left: 5px;\n        &:hover{\n            border-color: #A7A9B4;\n            background-color:#A7A9B4;\n            &:before{\n                color:#fff!important;\n                transition: 0.2s;\n            }\n        }\n        &:before{\n            color:#fff!important;\n            transition: 0.2s;\n        }\n    }        \n}\n/*ENd - fix pagination color*/",
+    "action": "Pagination Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "home-valuation-influencer-69ddc7e7",
+    "element": "Home Valuation",
+    "template": "Influencer",
+    "selector": null,
+    "css": "Home Valuation Global Code, button in mobile, center title and fix padding bottom in mobile",
+    "action": "",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-neighborhoods-influencer-01bc445c",
+    "element": "Feat Neighborhoods",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB */\ndiv.inf-slider-arrows{\n    .slick-prev, .slick-next{\n        background-color: #63666F;\n        border-color: #63666F;\n        margin-left: 5px;\n        &:hover{\n            border-color: #A7A9B4;\n            background-color:#A7A9B4;\n            &:before{\n                color:#fff!important;\n                transition: 0.2s;\n            }\n        }\n        &:before{\n            color:#fff!important;\n            transition: 0.2s;\n        }\n    }         \n}\n/*ENd - fix pagination color*/\n\ndiv.featured-neighborhoods {\n    padding-top: 88px;\n    .block-strikethrough:before {\n        border-top-color: #D9DAE4;\n        opacity: 1;\n    }\n}",
+    "action": "Fix pagination, padding top and color line",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-video-influencer-7f46a775",
+    "element": "Feat Video",
+    "template": "Influencer",
+    "selector": null,
+    "css": ".btn-play{\n    &:after{\n        border-left-color: #1D3B53; \n    }\n    &:hover{\n        background: #fff;\n        &:after{\n            border-left-color: #C4D1D9; \n        }\n    }\n}",
+    "action": "Play Button Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "wwu-influencer-45fc0a50",
+    "element": "WWU",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix width - WB Nicolas V*/\ndiv.work-with-us__content {\n    max-width: 590px;\n}\n/*END*/",
+    "action": "Fix Width",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-testimonial-influencer-7e57c789",
+    "element": "Feat. Testimonial",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Testimonial Card Theme - WB */\ndiv.testimonial-card {\n    background-color: #fffbf;\n    color: #fff;\n}\n/* END */",
+    "action": "Card Theme",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-testimonial-influencer-d209260f",
+    "element": "Feat. Testimonial",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB  */\ndiv.inf-slider-arrows{\n    .slick-prev, .slick-next{\n        background-color: #fff;\n        border-color: #fff;\n        margin-left: 5px;\n        &:hover{\n            background-color:#fff;\n            &:before{\n                color:#A7A9B4!important;\n                transition: 0.2s;\n            }\n        }\n        &:before{\n            color:#63666F!important;\n            transition: 0.2s;\n        }\n    }        \n}\n/*ENd - fix pagination color*/",
+    "action": "Pagination Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-39fd4e63",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - Theme Label and bottom line - WB  */\nspan.property-card__label {\n    background-color: #D9DAE4;\n    color: #000;\n}\n\ndiv.block-strikethrough:before {\n    border-top: 1px solid #D9DAE4;\n    opacity: 1;\n}\n/* END */",
+    "action": "Fix Theme, Label and Bottom Line",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-09aee318",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix Top Padding - WB */\n.featured-properties {\n    padding-top: 88px!important;\n}\n/*END*/",
+    "action": "Fix Top Padding",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "feat-properties-influencer-c01ac8d4",
+    "element": "Feat. Properties",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB */\ndiv.inf-slider-arrows{\n    .slick-prev, .slick-next{\n        background-color: #63666F;\n        border-color: #63666F;\n        margin-left: 5px;\n        &:hover{\n            border-color: #A7A9B4;\n            background-color:#A7A9B4;\n            &:before{\n                color:#fff!important;\n                transition: 0.2s;\n            }\n        }\n        &:before{\n            color:#fff!important;\n            transition: 0.2s;\n        }\n    }        \n}\n/*ENd - fix pagination color*/",
+    "action": "Pagination Style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "cta-block-influencer-2679d64b",
+    "element": "CTA Block",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix don't single words on the last line by WB */\n@media (max-width: 768px){\n    div.cta-block .text-block {\n        max-width: 100%;\n    }\n}\n\ndiv.cta-block .text-block {\n    max-width: 100%;\n}\n\nh2.lp-h2 p{\n    margin-bottom: 0px;\n}\n\n/*END*/",
+    "action": "Fix width in both views and remove magin bottom",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "cta-block-influencer-d6748d42",
+    "element": "CTA Block",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Start - Add label color - WB */\nspan.gallery-grid__status {\n    background-color: #D9DAE4;\n    color: #000;\n}\n/*END*/",
+    "action": "Add label color",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "cta-block-influencer-edcbb7fc",
+    "element": "CTA Block",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*START - fix pagination color - WB */\ndiv.paginationjs-pages ul li{\n    &.paginationjs-prev, &.paginationjs-next{\n        a:hover:before{\n            color:#ccc!important;\n            transition: 0.2s;\n        }\n        a:before{\n            color:#63666F!important;\n            transition: 0.2s;\n        }\n    }        \n}\n/*ENd - fix pagination color*/",
+    "action": "Fix pagination style",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  },
+  {
+    "id": "cta-block-influencer-2679d64b",
+    "element": "CTA Block",
+    "template": "Influencer",
+    "selector": null,
+    "css": "/*Fix don't single words on the last line by WB */\n@media (max-width: 768px){\n    div.cta-block .text-block {\n        max-width: 100%;\n    }\n}\n\ndiv.cta-block .text-block {\n    max-width: 100%;\n}\n\nh2.lp-h2 p{\n    margin-bottom: 0px;\n}\n\n/*END*/",
+    "action": "Fix width in both views and remove magin bottom",
+    "tags": null,
+    "screenshot": null,
+    "loomExplanation": null,
+    "source": {
+      "type": "Spreadsheet",
+      "url": "https://docs.google.com/spreadsheets/d/1SaJITZJ4EQo7K0u74aVpwS-VtvJzIuJ-qqDxAtuuGeg/edit?usp=sharing"
+    }
+  }
+]
