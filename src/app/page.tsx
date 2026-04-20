@@ -24,6 +24,8 @@ export default function HomePage() {
   const controllerRef = useRef<AbortController | null>(null)
 
   useEffect(() => {
+    let cancelled = false
+
     const run = async () => {
       setLoading(true)
       setError('')
@@ -44,16 +46,19 @@ export default function HomePage() {
         if (!res.ok) throw new Error('HTTP error')
 
         const data = (await res.json()) as { items: Injection[]; total: number }
-        setResults(Array.isArray(data.items) ? data.items : [])
-        setTotal(typeof data.total === 'number' ? data.total : 0)
+        if (!cancelled) {
+          setResults(Array.isArray(data.items) ? data.items : [])
+          setTotal(typeof data.total === 'number' ? data.total : 0)
+        }
       } catch (err: any) {
-        if (err?.name !== 'AbortError') setError('Could not search. Please try again.')
+        if (!cancelled && err?.name !== 'AbortError') setError('Could not search. Please try again.')
       } finally {
-        setLoading(false)
+        if (!cancelled) setLoading(false)
       }
     }
 
     run()
+    return () => { cancelled = true }
   }, [debounced, template])
 
   const hasQuery = query.trim().length > 0
